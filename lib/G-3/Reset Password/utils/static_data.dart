@@ -1,44 +1,48 @@
-class AppStaticData{
-  final String reg ='New Registration';
-  final String verification ='Phone Verification Code';
-  final String verificationCodeSent ='Please type the verification code\nsent to +966 917 913 4501';
-  final String firstNameUpper ='FIRST NAME';
-  final String firstName ='First Name';
-  final String lastNameUpper ='LAST  NAME';
-  final String lastName ='Last Name';
-  final String email ='EMAIL';
-  final String emailAddress  ='Email Address ';
-  final String phoneNumber ='PHONE NUMBER';
-  final String signUp ='Sign Up';
-  final String privacyPolicy ='By creating your grandizar account, you agree to the Terms of Use and Privacy Policy';
-  final String loginWith ='Or log in with';
-  final String alreadyAccount ='Already have an Account?';
-  final String logIn ='Log In';
-  final String verificationCode ='Verification Code';
-  final String verifyNow ='Verify Now';
-  final String minLeft ='9:48 min left';
-  final String resend ='Resend';
-  final String password ='Password';
-  final String forgotPassword ='Forgot password';
-  final String loginwithmobilenumber ='Or log in with mobile number';
-  final String SendCodeforLogIn ='Send Code for Log In';
-  final String newSignUp ='If you are new? Sign Up';
-  final String VerifyNow_SignIn ='Verify Now & Sign In';
-  final String Resetviaemailverification ='Reset via email verification';
-  final String phoneNo ='Phone No';
-  final String Resetviaphoneverification ='Reset via phone verification';
-  final String resetPassword ='Reset password';
-  final String sendCode ='Send Code';
-  final String newPassword ='Create New Password';
-  final String differentFrom ='Your new password must be different from\npreviously used password';
-  final String verificationCodeSentTo ='Please type the verification code sent to +966 917 913 4501';
-  // final String reg ='';
-  // final String reg ='';
-  // final String reg ='';
-  // final String reg ='';
-  // final String reg ='';
-  // final String reg ='';
-  // final String reg ='';
-  // final String reg ='';
-
+class AppStaticData {
+  static String reg = 'New Registration';
+  static String verification = 'Phone Verification Code';
+  static String verificationCodeSent =
+      'Please type the verification code\nsent to +966 917 913 4501';
+  static String firstNameUpper = 'FIRST NAME';
+  static String firstName = 'First Name';
+  static String lastNameUpper = 'LAST  NAME';
+  static String lastName = 'Last Name';
+  static String email = 'EMAIL';
+  static String emailAddress = 'Email Address ';
+  static String phoneNumber = 'PHONE NUMBER';
+  static String signUp = 'Sign Up';
+  static String privacyPolicy =
+      'By creating your grandizar account, you agree to the Terms of Use and Privacy Policy';
+  static String loginWith = 'Or log in with';
+  static String alreadyAccount = 'Already have an Account?';
+  static String logIn = 'Log In';
+  static String verificationCode = 'Verification Code';
+  static String verifyNow = 'Verify Now';
+  static String minLeft = '9:48 min left';
+  static String resend = 'Resend';
+  static String password = 'Password';
+  static String forgotPassword = 'Forgot password?';
+  static String loginwithmobilenumber = 'Or log in with mobile number';
+  static String SendCodeforLogIn = 'Send Code for Log In';
+  static String newSignUp = 'If you are new?';
+  static String signUpNow = 'Sign Up';
+  static String VerifyNow_SignIn = 'Verify Now & Sign In';
+  static String Resetviaemailverification = 'Reset via email verification';
+  static String phoneNo = 'Phone No';
+  static String Resetviaphoneverification = 'Reset via phone verification';
+  static String resetPassword = 'Reset password';
+  static String sendCode = 'Send Code';
+  static String newPassword = 'Create New Password';
+  static String differentFrom =
+      'Your new password must be different from\npreviously used password';
+  static String verificationCodeSentTo =
+      'Please type the verification code sent to +966 917 913 4501';
+  // static String reg ='';
+  // static String reg ='';
+  // static String reg ='';
+  // static String reg ='';
+  // static String reg ='';
+  // static String reg ='';
+  // static String reg ='';
+  // static String reg ='';
 }
