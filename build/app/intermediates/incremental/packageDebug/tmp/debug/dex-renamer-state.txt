@@ -1,0 +1,4 @@
+#Sat Sep 30 14:39:48 BDT 2023
+base.0=D\:\\Flutter\\Projects\\GrandizarCustomerApp_sajib\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
