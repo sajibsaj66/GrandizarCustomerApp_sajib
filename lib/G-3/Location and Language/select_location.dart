@@ -1,13 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:grandizar_customer_app_sajib/G-3/model/static_models.dart';
-import 'package:grandizar_customer_app_sajib/G-3/utils/app_imges.dart';
-import 'package:grandizar_customer_app_sajib/G-3/utils/colors.dart';
-import 'package:grandizar_customer_app_sajib/G-3/widgets/containers.dart';
-import 'package:grandizar_customer_app_sajib/G-3/widgets/text_fields.dart';
-import 'package:grandizar_customer_app_sajib/G-3/widgets/texts.dart';
-
-import '../widgets/buttons.dart';
+import '../index.dart';
 
 class SelectLocationPage extends StatelessWidget {
   const SelectLocationPage({super.key});

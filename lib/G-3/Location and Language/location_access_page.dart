@@ -1,12 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:geolocator/geolocator.dart';
-import 'package:grandizar_customer_app_sajib/G-3/Location%20and%20Language/hubs_page.dart';
-
-import 'package:grandizar_customer_app_sajib/G-3/utils/app_imges.dart';
-import 'package:grandizar_customer_app_sajib/G-3/utils/colors.dart';
-import 'package:grandizar_customer_app_sajib/G-3/widgets/buttons.dart';
-import 'package:grandizar_customer_app_sajib/G-3/widgets/texts.dart';
+import '../index.dart';
 
 class LocationAccessPage extends StatelessWidget {
   LocationAccessPage({super.key});
