@@ -66,7 +66,7 @@ class LocationAccessPage extends StatelessWidget {
                   print(position?.latitude);
                   print(position?.longitude);
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => HubsPage()));
+                      MaterialPageRoute(builder: (context) => const HubsPage()));
                 }),
             SizedBox(height: 20.h),
             CustomText(

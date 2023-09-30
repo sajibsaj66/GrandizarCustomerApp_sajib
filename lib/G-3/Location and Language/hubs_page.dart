@@ -7,7 +7,7 @@ import 'package:grandizar_customer_app_sajib/G-3/widgets/texts.dart';
 
 import '../model/static_models.dart';
 import '../utils/app_imges.dart';
-import '../widgets/containers.dart';
+
 
 class HubsPage extends StatefulWidget {
   const HubsPage({super.key});
@@ -31,7 +31,7 @@ class _HubsPageState extends State<HubsPage> {
           child: CircleAvatar(
             backgroundColor: AppColors.awashColor.withOpacity(0.9),
             radius: 22.r,
-            child: Icon(Icons.arrow_back_ios_new, color: AppColors.redColor),
+            child: const Icon(Icons.arrow_back_ios_new, color: AppColors.redColor),
           ),
         ),
         title: CustomText(title: 'List of Hubs', fontSize: 22.spMax),
@@ -84,12 +84,12 @@ class _HubsPageState extends State<HubsPage> {
                             ),
                             markers: <Marker>{
                               Marker(
-                                markerId: MarkerId('your_location'),
+                                markerId: const MarkerId('your_location'),
                                 position: LatLng(
                                     locations[selectedIndex].latitude,
                                     locations[selectedIndex]
                                         .longitude), // Set marker coordinates
-                                infoWindow: InfoWindow(title: 'Your Location'),
+                                infoWindow: const InfoWindow(title: 'Your Location'),
                               ),
                             },
                             onMapCreated: (GoogleMapController controller) {

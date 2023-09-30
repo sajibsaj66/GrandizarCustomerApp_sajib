@@ -26,7 +26,7 @@ class LocationContainer extends StatelessWidget {
           Container(
             width: 24.w,
             height: 18.h,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
                 image: DecorationImage(
                     image: AssetImage(AppImages.saudiFlag), fit: BoxFit.fill
                 )

@@ -21,12 +21,12 @@ class AppStaticData{
   final String password ='Password';
   final String forgotPassword ='Forgot password';
   final String loginwithmobilenumber ='Or log in with mobile number';
-  final String SendCodeforLogIn ='Send Code for Log In';
+  final String sendCodeLogin ='Send Code for Log In';
   final String newSignUp ='If you are new? Sign Up';
-  final String VerifyNow_SignIn ='Verify Now & Sign In';
-  final String Resetviaemailverification ='Reset via email verification';
+  final String verifyNowSignIn ='Verify Now & Sign In';
+  final String mailVerification ='Reset via email verification';
   final String phoneNo ='Phone No';
-  final String Resetviaphoneverification ='Reset via phone verification';
+  final String phoneVerification ='Reset via phone verification';
   final String resetPassword ='Reset password';
   final String sendCode ='Send Code';
   final String newPassword ='Create New Password';
