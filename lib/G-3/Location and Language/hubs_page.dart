@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-
 import '../index.dart';
 
 
@@ -141,7 +140,7 @@ class _HubsPageState extends State<HubsPage> {
                       }),
               SizedBox(height: 30.h),
               CustomButton(
-                title: 'Select',
+                title: AppStaticData.select,
                 onPressed: selectedIndex == -1
                     ? () {}
                     : () {
