@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:geolocator/geolocator.dart';
-
-import '../utils/app_imges.dart';
-import '../utils/colors.dart';
-import '../widgets/texts.dart';
+import '../index.dart';
 
 class PermissionType extends StatelessWidget {
   const PermissionType({super.key});

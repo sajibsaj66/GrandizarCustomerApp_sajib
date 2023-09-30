@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
-import '../utils/app_imges.dart';
-import '../utils/colors.dart';
-import 'texts.dart';
+import '../index.dart';
 
 class LocationContainer extends StatelessWidget {
   const LocationContainer({super.key, required this.locationName});

@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:grandizar_customer_app_sajib/G-3/utils/colors.dart';
-import 'package:grandizar_customer_app_sajib/G-3/widgets/buttons.dart';
-import 'package:grandizar_customer_app_sajib/G-3/widgets/texts.dart';
 
-import '../model/static_models.dart';
-import '../utils/app_imges.dart';
+import '../index.dart';
+
 
 
 class HubsPage extends StatefulWidget {
