@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_connect/http/src/utils/utils.dart';
+import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/controller/login_controller.dart';
+import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/screens/reset_pass.dart';
 import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/screens/sign_up_screen.dart';
 import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/screens/verification_screen.dart';
 import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/utils/colors.dart';
@@ -11,8 +12,8 @@ import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/widgets/primar
 import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/widgets/text_style.dart';
 
 class LoginScreen extends StatelessWidget {
-  const LoginScreen({super.key});
-
+  LoginScreen({super.key});
+  final LoginController loginController = Get.put(LoginController());
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,10 +33,24 @@ class LoginScreen extends StatelessWidget {
       SizedBox(
         height: Get.height * 0.02,
       ),
-      CustomTextField(
-        hintText: AppStaticData.password,
-        prefixIcon: Icons.lock,
-        title: AppStaticData.password,
+      Obx(
+        () => CustomTextField(
+          hintText: AppStaticData.password,
+          prefixIcon: Icons.lock,
+          title: AppStaticData.password,
+          obscureText: loginController.obscureText.value,
+          suffixWidget: InkWell(
+            onTap: () {
+              loginController.changePasswordVisibility();
+            },
+            child: Icon(
+              loginController.isPasswordVisible.value
+                  ? Icons.visibility_off
+                  : Icons.visibility,
+              color: AppColors.secondaryBlackColor,
+            ),
+          ),
+        ),
       ),
       SizedBox(
         height: Get.height * 0.02,
@@ -74,7 +89,12 @@ class LoginScreen extends StatelessWidget {
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: ListTile(
-                        leading: Icon(
+                        onTap: () {
+                          Get.to(() => const ResetPwdWithEmailPhone(
+                                isEmail: true,
+                              ));
+                        },
+                        leading: const Icon(
                           Icons.email,
                         ),
                         title: Text(
@@ -94,7 +114,10 @@ class LoginScreen extends StatelessWidget {
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: ListTile(
-                        leading: Icon(
+                        onTap: () {
+                          Get.to(() => const ResetPwdWithEmailPhone());
+                        },
+                        leading: const Icon(
                           Icons.phone,
                         ),
                         title: Text(
@@ -143,7 +166,9 @@ class LoginScreen extends StatelessWidget {
       PrimaryBtn(
         title: AppStaticData.SendCodeforLogIn,
         onPressed: () {
-          Get.to(() => const VerificationScreen());
+          Get.to(() => const VerificationScreen(
+                sendcodeForLogin: true,
+              ));
         },
       ),
       SizedBox(

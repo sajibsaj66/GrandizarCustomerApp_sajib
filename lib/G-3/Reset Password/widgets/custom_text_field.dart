@@ -8,15 +8,19 @@ class CustomTextField extends StatelessWidget {
   final bool? isCountryPicker;
   final TextEditingController? txtController;
   final String hintText;
-  final IconData prefixIcon;
+  final IconData? prefixIcon;
   final String title;
+  final Widget? suffixWidget;
+  final bool? obscureText;
   const CustomTextField(
       {super.key,
       this.txtController,
       required this.hintText,
-      required this.prefixIcon,
+      this.prefixIcon,
       required this.title,
-      this.isCountryPicker});
+      this.isCountryPicker,
+      this.suffixWidget,
+      this.obscureText});
 
   @override
   Widget build(BuildContext context) {
@@ -29,6 +33,7 @@ class CustomTextField extends StatelessWidget {
         ),
         TextFormField(
           controller: txtController,
+          obscureText: obscureText ?? false,
           decoration: InputDecoration(
             prefixIcon: isCountryPicker ?? false
                 ? CountryCodePicker(
@@ -41,9 +46,12 @@ class CustomTextField extends StatelessWidget {
                     showOnlyCountryWhenClosed: false,
                     alignLeft: false,
                   )
-                : Icon(
-                    prefixIcon,
-                  ),
+                : prefixIcon == null
+                    ? null
+                    : Icon(
+                        prefixIcon,
+                      ),
+            suffixIcon: suffixWidget,
             hintText: hintText,
             hintStyle: titleStyle.copyWith(fontSize: 15),
             border: OutlineInputBorder(

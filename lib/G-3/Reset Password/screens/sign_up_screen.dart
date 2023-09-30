@@ -61,7 +61,9 @@ class SignupScreen extends StatelessWidget {
           PrimaryBtn(
             title: AppStaticData.signUp,
             onPressed: () {
-              Get.to(() => const VerificationScreen());
+              Get.to(() => const VerificationScreen(
+                    sendcodeForLogin: true,
+                  ));
             },
           ),
           SizedBox(
@@ -126,7 +128,7 @@ class SignupScreen extends StatelessWidget {
               ),
               TextButton(
                 onPressed: () {
-                  Get.to(() => const LoginScreen());
+                  Get.to(() => LoginScreen());
                 },
                 child: Text(
                   AppStaticData.logIn,

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/screens/login_screen.dart';
+import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/screens/new_password.dart';
 import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/utils/colors.dart';
 import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/utils/static_data.dart';
 import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/widgets/app_heading.dart';
@@ -8,7 +10,10 @@ import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/widgets/primar
 import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/widgets/text_style.dart';
 
 class VerificationScreen extends StatelessWidget {
-  const VerificationScreen({super.key});
+  final bool? isEmail;
+  final bool? sendcodeForLogin;
+  const VerificationScreen(
+      {super.key, this.isEmail = false, this.sendcodeForLogin = false});
 
   @override
   Widget build(BuildContext context) {
@@ -17,13 +22,18 @@ class VerificationScreen extends StatelessWidget {
         SizedBox(
           height: Get.height * 0.05,
         ),
-        AppHeading(title: AppStaticData.verification),
+        AppHeading(
+            title: isEmail!
+                ? AppStaticData.verificationEmail
+                : AppStaticData.verification),
         SizedBox(
           height: Get.height * 0.01,
         ),
         Text(
           textAlign: TextAlign.center,
-          AppStaticData.verificationCodeSent,
+          isEmail!
+              ? AppStaticData.verificationCodeSentTo
+              : AppStaticData.verificationCodeSent,
           style: subTitleStyle,
         ),
         SizedBox(
@@ -31,15 +41,20 @@ class VerificationScreen extends StatelessWidget {
         ),
         CustomTextField(
           hintText: AppStaticData.verificationCode,
-          prefixIcon: Icons.lock,
           title: "",
         ),
         SizedBox(
           height: Get.height * 0.02,
         ),
         PrimaryBtn(
-          title: AppStaticData.verifyNow,
-          onPressed: () {},
+          title: sendcodeForLogin!
+              ? AppStaticData.VerifyNow_SignIn
+              : AppStaticData.verifyNow,
+          onPressed: () {
+            sendcodeForLogin!
+                ? Get.to(() => LoginScreen())
+                : Get.to(() => NewPasswordSetScreen());
+          },
         ),
         SizedBox(
           height: Get.height * 0.02,
