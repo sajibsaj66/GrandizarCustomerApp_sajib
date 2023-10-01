@@ -19,9 +19,12 @@ class PasswordChanged extends StatelessWidget {
             SizedBox(height: 30),
             Text('password changed successfully', style: subTitleStyle),
             SizedBox(height: 100),
-            PrimaryBtn(title: 'Login  Now', onPressed: (){
-              Get.to(LoginScreen());
-            })
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: PrimaryBtn(title: 'Login  Now', onPressed: (){
+                Get.to(LoginScreen());
+              }),
+            )
           ],
         ),
       ),

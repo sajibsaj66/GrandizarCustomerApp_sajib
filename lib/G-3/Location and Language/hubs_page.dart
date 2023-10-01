@@ -23,15 +23,20 @@ class _HubsPageState extends State<HubsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.whiteColor,
       appBar: AppBar(
         centerTitle: true,
         toolbarHeight: 90.h,
+        backgroundColor: AppColors.whiteColor,
+        elevation: 0.0,
         leading: Padding(
           padding: const EdgeInsets.only(left: 12),
           child: CircleAvatar(
             backgroundColor: AppColors.awashColor.withOpacity(0.9),
             radius: 22.r,
-            child: Icon(Icons.arrow_back_ios_new, color: AppColors.redColor),
+            child: IconButton(onPressed: () {
+              Navigator.pop(context);
+            }, icon: Icon(Icons.arrow_back_ios_new, color: AppColors.redColor)),
           ),
         ),
         title: CustomText(title: 'List of Hubs', fontSize: 22.spMax),

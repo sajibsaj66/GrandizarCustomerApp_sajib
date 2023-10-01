@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(
             fontFamily: GoogleFonts.sen().fontFamily,
           ),
-          home: LocationAccessPage(),
+          home: SignupScreen(),
         );
       },
     );

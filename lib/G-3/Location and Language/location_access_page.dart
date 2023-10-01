@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:geolocator/geolocator.dart';
+import 'package:grandizar_customer_app_sajib/G-3/Location%20and%20Language/select_location.dart';
 
 import 'hubs_page.dart';
 import 'utils/app_imges.dart';
@@ -13,34 +14,30 @@ class LocationAccessPage extends StatelessWidget {
 
   Position? position;
 
-  _getMyLocation() async {
-    await Geolocator.requestPermission();
+  Future<Position> _determinePosition() async {
+    bool serviceEnabled;
+    LocationPermission permission;
 
-    Future<Position> _determinePosition() async {
-      bool serviceEnabled;
-      LocationPermission permission;
-
-      serviceEnabled = await Geolocator.isLocationServiceEnabled();
-      if (!serviceEnabled) {
-        return Future.error('Location services are disabled.');
-      }
-
-      permission = await Geolocator.checkPermission();
-      if (permission == LocationPermission.denied) {
-        permission = await Geolocator.requestPermission();
-        if (permission == LocationPermission.denied) {
-          return Future.error('Location permissions are denied');
-        }
-      }
-
-      if (permission == LocationPermission.deniedForever) {
-        return Future.error(
-            'Location permissions are permanently denied, we cannot request permissions.');
-      }
-
-      return await Geolocator.getCurrentPosition(
-          desiredAccuracy: LocationAccuracy.high);
+    serviceEnabled = await Geolocator.isLocationServiceEnabled();
+    if (!serviceEnabled) {
+      return Future.error('Location services are disabled.');
     }
+
+    permission = await Geolocator.checkPermission();
+    if (permission == LocationPermission.denied) {
+      permission = await Geolocator.requestPermission();
+      if (permission == LocationPermission.denied) {
+        return Future.error('Location permissions are denied');
+      }
+    }
+
+    if (permission == LocationPermission.deniedForever) {
+      return Future.error(
+          'Location permissions are permanently denied, we cannot request permissions.');
+    }
+
+    return await Geolocator.getCurrentPosition(
+        desiredAccuracy: LocationAccuracy.high);
   }
 
   @override
@@ -55,22 +52,36 @@ class LocationAccessPage extends StatelessWidget {
             CustomText(title: 'Enable Your Location', fontSize: 18.sp),
             CustomText(
                 title:
-                'To search for the best nearby driver, we\nwant to know your current location',
+                    'To search for the best nearby driver, we\nwant to know your current location',
                 fontSize: 16.sp,
                 txtColor: AppColors.disableColor),
             SizedBox(height: 100.h),
             CustomButton(
                 title: 'Allow Location Access',
                 onPressed: () async {
-                  _getMyLocation();
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const HubsPage()));
+                  try {
+                    Position position = await _determinePosition();
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const HubsPage()),
+                    );
+                  } catch (e) {
+                    print('Error getting location: $e');
+                  }
                 }),
             SizedBox(height: 20.h),
-            CustomText(
-                title: 'Enter location manually',
-                fontSize: 16.sp,
-                textDecoration: TextDecoration.underline),
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => SelectLocationPage()));
+              },
+              child: CustomText(
+                  title: 'Enter location manually',
+                  fontSize: 16.sp,
+                  textDecoration: TextDecoration.underline),
+            ),
           ],
         ),
       ),
