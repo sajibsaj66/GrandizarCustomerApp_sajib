@@ -1,13 +1,13 @@
 <variant
     name="release"
     package="com.example.grandizar_customer_app_sajib"
-    minSdkVersion="19"
+    minSdkVersion="21"
     targetSdkVersion="33"
     shrinking="true"
-    mergedManifest="D:\Flutter\Projects\GrandizarCustomerApp_sajib\build\app\intermediates\merged_manifest\release\AndroidManifest.xml"
-    manifestMergeReport="D:\Flutter\Projects\GrandizarCustomerApp_sajib\build\app\outputs\logs\manifest-merger-release-report.txt"
-    proguardFiles="D:\Flutter\Projects\GrandizarCustomerApp_sajib\build\app\intermediates\default_proguard_files\global\proguard-android.txt-7.3.0;C:\src\flutter\packages\flutter_tools\gradle\flutter_proguard_rules.pro;proguard-rules.pro"
-    partialResultsDir="D:\Flutter\Projects\GrandizarCustomerApp_sajib\build\app\intermediates\lint_vital_partial_results\release\out">
+    mergedManifest="D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\app\intermediates\merged_manifest\release\AndroidManifest.xml"
+    manifestMergeReport="D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\app\outputs\logs\manifest-merger-release-report.txt"
+    proguardFiles="D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\app\intermediates\default_proguard_files\global\proguard-android.txt-7.3.0;C:\src\flutter\packages\flutter_tools\gradle\flutter_proguard_rules.pro;proguard-rules.pro"
+    partialResultsDir="D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\app\intermediates\lint_vital_partial_results\release\out">
   <buildFeatures
       namespacing="REQUIRED"/>
   <sourceProviders>
@@ -32,9 +32,9 @@
         value="android.app.Application" />
   </manifestPlaceholders>
   <mainArtifact
-      classOutputs="D:\Flutter\Projects\GrandizarCustomerApp_sajib\build\app\intermediates\javac\release\classes;D:\Flutter\Projects\GrandizarCustomerApp_sajib\build\app\tmp\kotlin-classes\release;D:\Flutter\Projects\GrandizarCustomerApp_sajib\build\app\kotlinToolingMetadata;D:\Flutter\Projects\GrandizarCustomerApp_sajib\build\app\intermediates\compile_and_runtime_not_namespaced_r_class_jar\release\R.jar"
+      classOutputs="D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\app\intermediates\javac\release\classes;D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\app\tmp\kotlin-classes\release;D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\app\kotlinToolingMetadata;D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\app\intermediates\compile_and_runtime_not_namespaced_r_class_jar\release\R.jar"
       applicationId="com.example.grandizar_customer_app_sajib"
-      generatedSourceFolders="D:\Flutter\Projects\GrandizarCustomerApp_sajib\build\app\generated\ap_generated_sources\release\out;D:\Flutter\Projects\GrandizarCustomerApp_sajib\build\app\generated\aidl_source_output_dir\release\out;D:\Flutter\Projects\GrandizarCustomerApp_sajib\build\app\generated\source\buildConfig\release;D:\Flutter\Projects\GrandizarCustomerApp_sajib\build\app\generated\renderscript_source_output_dir\release\out"
-      generatedResourceFolders="D:\Flutter\Projects\GrandizarCustomerApp_sajib\build\app\generated\res\rs\release;D:\Flutter\Projects\GrandizarCustomerApp_sajib\build\app\generated\res\resValues\release">
+      generatedSourceFolders="D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\app\generated\ap_generated_sources\release\out;D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\app\generated\aidl_source_output_dir\release\out;D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\app\generated\source\buildConfig\release;D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\app\generated\renderscript_source_output_dir\release\out"
+      generatedResourceFolders="D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\app\generated\res\rs\release;D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\app\generated\res\resValues\release">
   </mainArtifact>
 </variant>

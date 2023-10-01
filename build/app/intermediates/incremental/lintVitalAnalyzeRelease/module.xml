@@ -1,12 +1,12 @@
 <lint-module
     format="1"
-    dir="D:\Flutter\Projects\GrandizarCustomerApp_sajib\android\app"
+    dir="D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\android\app"
     name=":app"
     type="APP"
     maven="android:app:"
     gradle="7.3.0"
-    buildFolder="D:\Flutter\Projects\GrandizarCustomerApp_sajib\build\app"
-    bootClassPath="C:\Users\DCL\AppData\Local\Android\sdk\platforms\android-33\android.jar;C:\Users\DCL\AppData\Local\Android\sdk\build-tools\30.0.3\core-lambda-stubs.jar"
+    buildFolder="D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\app"
+    bootClassPath="C:\Users\ssk12\AppData\Local\Android\sdk\platforms\android-33\android.jar;C:\Users\ssk12\AppData\Local\Android\sdk\build-tools\30.0.3\core-lambda-stubs.jar"
     javaSourceLevel="1.8"
     compileTarget="android-33">
   <lintOptions

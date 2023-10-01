@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:grandizar_customer_app_sajib/G-3/Location%20and%20Language/location_access_page.dart';
 import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/controller/login_controller.dart';
 import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/screens/reset_pass.dart';
 import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/screens/sign_up_screen.dart';
@@ -145,7 +146,10 @@ class LoginScreen extends StatelessWidget {
       ),
       PrimaryBtn(
         title: AppStaticData.logIn,
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) => LocationAccessPage()));
+        },
       ),
       SizedBox(
         height: Get.height * 0.02,

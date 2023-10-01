@@ -1,4 +1,4 @@
-#Sat Sep 23 17:55:32 BDT 2023
-base.0=D\:\\Flutter\\Projects\\GrandizarCustomerApp_sajib\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
+#Sun Oct 01 18:17:42 BDT 2023
+base.0=D\:\\Sizan\\Desh IT\\GrandizarCustomerApp_sajib\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

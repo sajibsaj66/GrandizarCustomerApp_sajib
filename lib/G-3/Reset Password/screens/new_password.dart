@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/controller/login_controller.dart';
 import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/screens/login_screen.dart';
+import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/screens/password_changed.dart';
 import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/utils/colors.dart';
 import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/utils/static_data.dart';
 import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/widgets/app_heading.dart';
@@ -56,7 +57,7 @@ class NewPasswordSetScreen extends StatelessWidget {
         PrimaryBtn(
           title: AppStaticData.resetPassword,
           onPressed: () {
-            Get.to(() => LoginScreen());
+            Get.to(() => PasswordChanged());
           },
         ),
         SizedBox(
