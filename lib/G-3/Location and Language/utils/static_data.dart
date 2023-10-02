@@ -1,6 +1,7 @@
 class AppStaticData{
   static const reg ='New Registration';
   static const verification ='Phone Verification Code';
+  static const verificationEmail ='Email Verification';
   static const verificationCodeSent ='Please type the verification code\nsent to +966 917 913 4501';
   static const firstNameUpper ='FIRST NAME';
   static const firstName ='First Name';

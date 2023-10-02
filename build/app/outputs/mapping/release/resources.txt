@@ -3,6 +3,7 @@ Web content present: false
 Referenced Strings:
 cancel
 THROTTLE_NEVER
+getLocation
 DISMISS
 markersToChange
 app_flutter
@@ -15,6 +16,7 @@ zIndex
 googleSignInAccount
 GeneratedPluginsRegister
 java.lang.CharSequence
+$
 androidx.window.layout.WindowInfoTrac...
 CONNECTION_SUSPENDED_DURING_CALL
 click
@@ -25,6 +27,7 @@ kotlinx.coroutines.DefaultExecutor
 MODULE_VERSION
 registerWith
 SystemSoundType.alert
+serviceEnabled
 REDUCE_MOTION
 displayName
 $splitPairFilters
@@ -38,6 +41,7 @@ AccountAccessor
 TextCapitalization.words
 _
 SUCCESS
+c
 d
 e
 destroy_engine_with_activity
@@ -60,8 +64,8 @@ SystemUiMode.edgeToEdge
 com.google.android.gms.maps.internal....
 displayFeature.rect
 mimeType
-emailAddress
 PASSIVE
+emailAddress
 startIndex
 android:style
 componentName
@@ -73,6 +77,7 @@ extensionCallback
 com.google.android.gms.signin.interna...
 gps
 LONG_PRESS
+list
 HAS_CHECKED_STATE
 UNSET_PRIMARY_NAV
 FlutterEngine
@@ -81,9 +86,9 @@ com.google.android.location.internal....
 AppLifecycleState.
 SystemChrome.setSystemUIOverlayStyle
 UseViewLifecycleInFragment
+enable_state_restoration
 COMPLETING_WAITING_CHILDREN
 HandlerLeak
-enable_state_restoration
 THROTTLE_ALWAYS
 plugins.flutter.dev/google_maps_android
 _invoked
@@ -91,6 +96,7 @@ medium
 locale
 SDK_INT
 defType
+provider
 _delayed
 android.os.Build
 MOVE_CURSOR_BACKWARD_BY_CHARACTER
@@ -106,6 +112,7 @@ ACTION_ARGUMENT_SET_TEXT_CHARSEQUENCE
 android.view.View$AttachInfo
 FlutterActivity
 java.lang.Float
+isBackgroundModeEnabled
 Dispatchers.IO
 focus
 EmptyQueue
@@ -124,12 +131,13 @@ getDeferredComponentInstallState
 defaultGoogleSignInAccount
 splitRule
 name:
-resizeUp
 creditCardNumber
+resizeUp
 transparency
 polygonIdsToRemove
 DiscouragedApi
 onPostResume
+CHANGE_NOTIFICATION_OPTIONS_ERROR
 wait
 FlutterActivityAndFragmentDelegate
 birthDateYear
@@ -138,11 +146,12 @@ GoogleApiAvailability
 %s.%sParcelizer
 packageName:
 CHARACTERS
-top
 io.flutter.embedding.android.EnableVu...
+top
 it.parameterTypes
 mNextServedView
 POLL_FAILED
+changeNotificationOptions
 java.lang.String
 resizeDown
 TextInput.setClient
@@ -165,16 +174,17 @@ android.widget.CheckBox
 com.google.android.gms.signin.interna...
 polygonsToAdd
 HapticFeedback.vibrate
-longitude
 repeatCount
+longitude
 com.android.
 void
 flutter/restoration
 onUserLeaveHint
 mStableInsets
+UNEXPECTED_ERROR
 _cur
-OFFER_SUCCESS
 android.car.EXTENSIONS
+OFFER_SUCCESS
 basic
 kotlin.Throwable
 sidecarDisplayFeatures
@@ -192,6 +202,7 @@ com.google.android.gms.signin.interna...
 DEAD_CLIENT
 fromBytes
 LANDSCAPE_LEFT
+StreamHandlerImpl
 android.location.PROVIDERS_CHANGED
 direction
 BITMAP
@@ -234,12 +245,13 @@ dev.flutter.pigeon.PathProviderApi.ge...
 LEGACY
 CUSTOM_ACTION
 MODULE_ID
-STANDARD
 cached_engine_id
+STANDARD
 latest
 setRemoveOnCancelPolicy
 com.google.android.gms.maps.model.int...
 MUSIC
+NO_ACTIVITY
 forbidden
 checkOpNoThrow
 IS_LIVE_REGION
@@ -250,6 +262,8 @@ getSourceNodeId
 ZoomGesturesEnabled
 androidx.lifecycle.ViewModelProvider....
 geodesic
+channelName
+navigation_empty_icon
 chars
 southwest
 kotlinx.coroutines.android.AndroidDis...
@@ -263,6 +277,7 @@ android.widget.Button
 REPLACE
 markState
 addressCity
+iconName
 CrashUtils
 flutter.baseflow.com/geolocator_updat...
 NAME
@@ -295,12 +310,13 @@ INTERNAL_ERROR
 createFromDeprecatedProvider
 callbackWrapper
 getPosture
-pair
 generic
+pair
 DATETIME
 PASTE
 com.google.android.gms.signin.interna...
 short
+time
 IS_HEADER
 COMPLETING_RETRY
 VISIBLE_PASSWORD
@@ -310,12 +326,13 @@ TextInput.clearClient
 SCROLL_RIGHT
 android.widget.ImageView
 android.widget.RadioButton
-textCapitalization
 moduleName
+textCapitalization
 circles
 put
 TextInputType.text
 embeddingCallback
+shouldShowRequestPermissionRationale
 RotateGesturesEnabled
 SCROLL_LEFT
 options
@@ -346,8 +363,9 @@ android.intent.action.RUN
 fadeIn
 low
 INITIALIZED
-android.support.v13.view.inputmethod....
+satelliteNumber
 KeyEventChannel
+android.support.v13.view.inputmethod....
 producerIndex
 REMOVE
 flutter/settings
@@ -355,8 +373,8 @@ addressLocality
 CompassEnabled
 serverAuthCode
 com.google.android.gms.common.interna...
-callbackInterface
 DeviceOrientation.landscapeLeft
+callbackInterface
 .immediate
 TextInputAction.unspecified
 char
@@ -391,14 +409,14 @@ point
 zoomTo
 _removedRef
 CANCELED
-alias
 polylinesToChange
+alias
 common_google_play_services_resolutio...
 kotlin.String.Companion
 padding
 zoom
-TextInput.show
 jClass
+TextInput.show
 primaryActivityName.className
 windowMetrics
 systemNavigationBarDividerColor
@@ -407,9 +425,8 @@ CLIP_PATH
 suggestions
 $splitRule
 snippet
-resizeColumn
 sidecarCompat
-java.specification.version
+resizeColumn
 plugins
 common_google_play_services_sign_in_f...
 kotlin.Cloneable
@@ -424,8 +441,8 @@ PARKING
 FOLD
 addObserver
 android:target_req_state
-NotifManCompat
 profile
+NotifManCompat
 ON_ANY
 consumeTapEvents
 SystemNavigator.setFrameworkHandlesBack
@@ -455,10 +472,11 @@ LOCALE
 InlinedApi
 personNamePrefix
 LICENSE_CHECK_FAILED
+lyokone/locationstream
 feature.rect
 missingDelimiterValue
-NotificationManagerCompat
 listener
+NotificationManagerCompat
 BanParcelableUsage
 android:support:request_indicies
 createWorkChain
@@ -471,6 +489,7 @@ radius
 info
 DORMANT
 HYBRID_ONLY
+satellites
 dev.flutter.pigeon.PathProviderApi.ge...
 TextInputType.name
 notificationText
@@ -529,12 +548,13 @@ SENTENCES
 TextInput.finishAutofillContext
 arch_disk_io_%d
 signed
-RESOLUTION_REQUIRED
 PlatformChannel
+RESOLUTION_REQUIRED
 FlutterView
 com.google.android.gms.maps.internal....
 PLAIN_TEXT
 getResId
+interval
 MOVE_CURSOR_FORWARD_BY_WORD
 TIMEOUT
 AccessibilityChannel
@@ -543,8 +563,8 @@ jointType
 dot
 secondaryActivityStack
 file
-android.summaryText
 CancellableContinuation
+android.summaryText
 map
 com.google.android.gms.maps.internal....
 HIDE
@@ -553,12 +573,11 @@ serviceResponseIntentKey
 addView
 uri
 TextInputAction.done
-kotlin.internal.JRE8PlatformImplement...
 onSaveInstanceState
 io.flutter.EntrypointUri
 VIRTUAL_DISPLAY_PLATFORM_VIEW
-newIndent
 IS_SLIDER
+newIndent
 resizeUpLeftDownRight
 KeyboardManager
 RESUMED
@@ -576,17 +595,18 @@ birthDateMonth
 ListenableEditingState
 separator
 personMiddleName
+entries
 null
 background
 true
 dispose
-phoneNational
 position
+phoneNational
 UNDISPATCHED
 LambdaLast
 featureBounds
-nearLeft
 transformer
+nearLeft
 best
 statusBarIconBrightness
 dcim
@@ -624,8 +644,10 @@ mServiceBrokerLock
 input_method
 oldText
 Clipboard.hasStrings
+hasPermission
 .ModuleDescriptor
 setCurrentState
+elapsedRealtimeUncertaintyNanos
 com.google.android.gms.signin.interna...
 statusCode
 0s
@@ -636,6 +658,7 @@ kotlinx.coroutines.channels.defaultBu...
 classes_to_restore
 activity.windowManager.currentWindowM...
 holes
+channelId
 android.type.verbatim
 service_esmobile
 GooglePlayServicesErrorDialog
@@ -647,8 +670,8 @@ systemNavigationBarIconBrightness
 contextMenu
 autofill
 TextCapitalization.none
-common_google_play_services_invalid_a...
 operation
+common_google_play_services_invalid_a...
 android.widget.EditText
 NO_DECISION
 MapOptions
@@ -667,6 +690,7 @@ collection
 MapToolbarEnabled
 name_sleep_segment_request
 android.view.DisplayInfo
+lyokone/location
 semanticAction
 _next
 rule
@@ -680,10 +704,11 @@ latLngBounds
 buttCap
 use_safe_parcelable_in_intents
 kotlinx.coroutines.test.internal.Test...
-creditCardExpirationYear
 CUTOUT
+creditCardExpirationYear
 SystemUiMode.leanBack
 LATEST
+SERVICE_STATUS_DISABLED
 dev.flutter.pigeon.PathProviderApi.ge...
 splitRules
 ON_CLOSE_HANDLER_INVOKED
@@ -696,17 +721,19 @@ prefix
 zoomOut
 movies
 getViewRootImpl
+SERVICE_STATUS_ERROR
 com.google.android.gms.maps.internal....
+enable
+permissions
 delimiter
 PrivateConstructorForUtilityClass
 NONE
 primaryActivityStack.activities
-android.support.v4.app.INotificationS...
 hints
+keyup
 onWindowLayoutChangeListenerAdded
 java.util.Set
 reduced
-keyup
 android.os.WorkSource$WorkChain
 DynamiteModule.class
 AmbientEnabled
@@ -741,11 +768,12 @@ resizeUpRightDownLeft
 float
 OP_SET_MAX_LIFECYCLE
 IS_BUTTON
+changeSettings
 MapType
 postalAddressExtended
 java.lang.Enum
-enableIMEPersonalizedLearning
 familyName
+enableIMEPersonalizedLearning
 heading_accuracy
 DETACHED
 android.permission.POST_NOTIFICATIONS
@@ -761,8 +789,8 @@ keyCode
 sequence
 DATA
 UTF8
-LatLngBoundsForCameraTarget
 flutter/localization
+LatLngBoundsForCameraTarget
 HORIZONTAL
 infoWindow
 FlutterRenderer
@@ -788,12 +816,12 @@ exception
 scrollBy
 TextInput.requestAutofill
 accuracy
-resolution
 deviceId
 actionIntent
+resolution
 enableWifiLock
-music
 com.google.app.id
+music
 verticalText
 android.util.LongArray
 getUncaughtExceptionPreHandler
@@ -809,11 +837,10 @@ packages
 version
 WindowInfoTrackerImpl.kt
 kotlin.jvm.functions.
-android.support.useSideChannel
 onMenuKeyEvent
+android.support.useSideChannel
 TextInputClient.updateEditingStateWit...
 activityMissing
-kotlin.internal.JRE7PlatformImplement...
 DECREASE
 PORTRAIT_DOWN
 markerId
@@ -842,6 +869,7 @@ android:theme
 acc
 flutter_assets
 getName
+enableBackgroundMode
 TextInputClient.performPrivateCommand
 altitude_accuracy
 addSuppressed
@@ -853,8 +881,8 @@ LIGHT
 com.google.android.gms.maps.internal....
 DID_LOSE_ACCESSIBILITY_FOCUS
 GoogleApiActivity
-phoneCountryCode
 RECONNECTION_TIMED_OUT_DURING_UPDATE
+phoneCountryCode
 failed_status
 telephoneNumberCountryCode
 error_code
@@ -887,6 +915,7 @@ HapticFeedbackType.lightImpact
 creditCardExpirationDay
 username
 decorate
+grantResults
 RESTRICTED_PROFILE
 UNDEFINED
 SplitPairRule
@@ -902,6 +931,7 @@ GoogleSignatureVerifier
 getNextMatch
 tiltGesturesEnabled
 dynamiteLoader
+subtitle
 GooglePlayServicesUpdatingDialog
 io.flutter.Entrypoint
 CLIP_RECT
@@ -912,8 +942,8 @@ cell
 GRANULARITY_FINE
 safeCast
 URI
-URL
 FlutterTextureView
+URL
 sLk
 kotlin.Long
 com.google.android.gms.common.api.int...
@@ -929,8 +959,8 @@ PRIVATE
 LoaderManager
 com.google.android.gms.maps.model.int...
 java.util.concurrent.ForkJoinPool
-LIGHT_IMPACT
 anchor
+LIGHT_IMPACT
 service_googleme
 DESTROYED
 androidx.core.app.extra.COMPAT_TEMPLATE
@@ -942,6 +972,7 @@ myLocationEnabled
 ATOMIC
 kotlin.collections.Collection
 sInstance
+elapsedRealtimeNanos
 points
 TextInputAction.send
 com.google.android.gms.dynamiteloader...
@@ -996,6 +1027,8 @@ TextInputType.number
 polygonId
 layout_inflater
 getParentNodeId
+FlutterLocation
+LocationPlugin
 getPoolSize
 ScrollGesturesEnabled
 SystemChrome.setEnabledSystemUIMode
@@ -1012,6 +1045,7 @@ android.intent.action.PROVIDER_CHANGED
 creditCardExpirationMonth
 cache
 enableWakeLock
+TaskOnStopCallback
 deltaText
 markersToAdd
 GmsDynamite
@@ -1037,24 +1071,26 @@ https://plus.google.com/
 cancelGetCurrentPosition
 newLayoutInfo
 blockingTasksInBuffer
+flutter_location_channel_01
 streetAddress
 kotlin.Char
 android:backStackId
 ACTION_ARGUMENT_EXTEND_SELECTION_BOOLEAN
 flutter/isolate
-grab
 trafficEnabled
+grab
 dimen
-documents
 java.util.ListIterator
+documents
+requestService
 SUCCESS_CACHE
 polylineIdsToRemove
 DefaultDispatcher
 kotlin.Double
 onActivityResult
 dev.flutter.pigeon.PathProviderApi.ge...
-com.google.android.gms.location.ILoca...
 GoogleCertificates
+com.google.android.gms.location.ILoca...
 view
 isLocationServiceEnabled
 allScroll
@@ -1067,6 +1103,7 @@ includeSubdomains
 LocationServices.API
 overlay
 LOCATION_SERVICES_DISABLED
+CHANGE_SETTINGS_ERROR
 creditCardSecurityCode
 parentMetrics
 customCap
@@ -1075,9 +1112,9 @@ flutter
 name
 Class
 dalvik.
-fields
 SERVICE_VERSION_UPDATE_REQUIRED
 DartExecutor
+fields
 permissionDenied
 getDescriptor
 keymap
@@ -1087,9 +1124,9 @@ FlutterLoader
 deltaStart
 kotlin.coroutines.jvm.internal.BaseCo...
 android
+description
 nameSuffix
 java.lang.module.ModuleDescriptor
-description
 circlesToChange
 textScaleFactor
 com.google.android.gms.maps.internal....
@@ -1107,8 +1144,8 @@ Cancelled
 target
 android.title.big
 android.intent.action.PACKAGE_ADDED
-enableSuggestions
 primitiveFqNames.values
+enableSuggestions
 GoogleApiManager
 android.intent.action.VIEW
 IS_MULTILINE
@@ -1187,12 +1224,13 @@ kotlin.Any
 compassEnabled
 Brightness.dark
 whileInUse
-notification
 selectionBase
+notification
 SettingsChannel
 plainCodePoint
 com.google.android.gms.signin.interna...
 _reusableCancellableContinuation
+onTapBringToFront
 android.view.View
 java.lang.Byte
 AppBundleLocaleChanges
@@ -1207,8 +1245,8 @@ SCROLL_UP
 com.google.android.gms.dynamite.descr...
 kotlin.collections.Iterator
 CLOSED_EMPTY
-job
 MapsInitializer.class
+job
 TextInputClient.requestExistingInputS...
 SET_TEXT
 SystemChrome.restoreSystemUIOverlays
@@ -1219,16 +1257,17 @@ com.google.android.gms.signin.service...
 PlatformViewsChannel
 tileOverlaysToChange
 deltas
-uniqueIdentifier
 com.google.android.gms.maps.internal....
+uniqueIdentifier
 pcampaignid
 move
 SplitRuleResolution
-alarms
 com.google.android.gms.maps.model.int...
+alarms
 setPosture
 splitInfo.primaryActivityStack
 geolocator_mslAltitude
+FlutterLocationService
 WindowInsetsCompat
 TEXTURE_WITH_VIRTUAL_FALLBACK
 NETWORK_ERROR
@@ -1250,8 +1289,9 @@ DartMessenger
 HIGH_CONTRAST
 MOVE_CURSOR_BACKWARD_BY_WORD
 ar
-kotlinx.coroutines.scheduler.resoluti...
 kotlin.Unit
+kotlinx.coroutines.scheduler.resoluti...
+verticalAccuracy
 getType
 birthdayDay
 kotlin.jvm.internal.StringCompanionOb...
@@ -1275,6 +1315,7 @@ kUp
 e0
 FRAMEWORK_CLIENT
 DETACH
+isMock
 INACTIVE
 REL
 activityComponent.packageName
@@ -1299,6 +1340,7 @@ en
 NonDisposableHandle
 PODCASTS
 dev.flutter.pigeon.PathProviderApi.ge...
+android$support$v4$app$INotificationS...
 DeferredLifecycleHelper
 SyntheticAccessor
 countryName
@@ -1321,15 +1363,16 @@ common_google_play_services_network_e...
 workerCtl
 TextInputClient.updateEditingState
 SignIn.INTERNAL_API
+io.flutter.embedding.android.LeakVM
 resizeLeft
 com.google.android.gms.maps.model.int...
 failed_resolution
 fused
-io.flutter.embedding.android.LeakVM
 pushRouteInformation
 TextInputAction.next
 setInitialRoute
 MethodCallHandlerImpl
+MISSING_ACTIVITY
 TEXT
 clipboard
 HINGE
@@ -1360,6 +1403,7 @@ kotlin.jvm.internal.
 obfuscatedIdentifier
 set_mock_location_with_callback
 telephoneNumber
+headingAccuracy
 $GPGGA
 extras
 requestId
@@ -1384,6 +1428,7 @@ suffix
 high
 personMiddleInitial
 cleartextTrafficPermitted
+notificationId
 strokeColor
 API_UNAVAILABLE
 DID_GAIN_ACCESSIBILITY_FOCUS
@@ -1406,8 +1451,8 @@ TextInputType.visiblePassword
 birthday
 p0
 legacy
-ON_OFF_SWITCH_LABELS
 ClickableViewAccessibility
+ON_OFF_SWITCH_LABELS
 com.google.android.gms.location.inter...
 zoomGesturesEnabled
 photoUrl
@@ -1425,6 +1470,7 @@ COROUTINE_SUSPENDED
 flutter/textinput
 _LifecycleAdapter
 DCIM
+PERMISSION_DENIED_NEVER_ASK
 HAS_TOGGLED_STATE
 PathProviderPlugin
 IS_SELECTED
@@ -1435,6 +1481,7 @@ EMAIL_ADDRESS
 java.util.Map
 TextInputPlugin
 INTERRUPTED
+drawable
 BOTTOM_OVERLAYS
 TiltGesturesEnabled
 GeolocatorLocationService:Wakelock
@@ -1453,13 +1500,13 @@ SystemUiMode.immersive
 cloudMapId
 HALF_OPENED
 $this$$receiver
-email
 key
+email
 com.google.android.gms.maps.internal....
 kotlin.Enum.Companion
 RESOURCE
-creditCardExpirationDate
 endCap
+creditCardExpirationDate
 silent
 obscureText
 android:target_state
@@ -1471,8 +1518,8 @@ android.intent.category.DEFAULT
 kotlin.Float
 startCap
 handled
-resizeRight
 SystemNavigator.pop
+resizeRight
 TextInputAction.newline
 _prev
 permissionDefinitionsNotFound
@@ -1498,8 +1545,8 @@ TextInputAction.previous
 WorkSourceUtil
 serviceActionBundleKey
 CLICK
-GoogleMapController
 TextInputClient.onConnectionClosed
+GoogleMapController
 MULTILINE
 removeObserver
 ON_DESTROY
@@ -1508,14 +1555,15 @@ enableDeltaModel
 com.google.android.gms
 flutter/mousecursor
 gap
+CompileTimeConstant
 EMPTY
 text/plain
 flutter/system
 BlockedPrivateApi
 filters
+androidx.core.app.NotificationCompat$...
 api_force_staging
 HAS_IMPLICIT_SCROLLING
-androidx.core.app.NotificationCompat$...
 onWindowLayoutChangeListenerRemoved
 getLastKnownPosition
 Dispatchers.Main.immediate
@@ -1526,16 +1574,16 @@ splitInfo
 none
 type
 actionLabel
-android.hardware.type.iot
 TextCapitalization.sentences
+android.hardware.type.iot
 IMMERSIVE_STICKY
 indoorEnabled
 VERTICAL
 bestForNavigation
 appops
 get_current_location
-HapticFeedbackType.mediumImpact
 defaultMarker
+HapticFeedbackType.mediumImpact
 android:savedDialogState
 ACTION_ARGUMENT_MOVEMENT_GRANULARITY_INT
 wifi
@@ -1564,19 +1612,19 @@ GooglePlayServicesUtil
 feature
 flat
 get
-oneTimeCode
 dark
+oneTimeCode
+power
 copy
 precise
-power
 java.lang.Number
 StaticFieldLeak
 loaderVersion
 com.google.android.gms.maps.model.int...
-token
 initializer
-filter
+token
 SystemChrome.setPreferredOrientations
+filter
 help
 phoneNumberDevice
 podcasts
@@ -1602,8 +1650,8 @@ PERMISSION_DENIED
 tap
 androidx.window.java.layout.WindowInf...
 kotlin.jvm.internal.EnumCompanionObject
-io.flutter.InitialRoute
 distanceFilter
+io.flutter.InitialRoute
 controlState
 transition_animation_scale
 Active
@@ -1624,8 +1672,8 @@ kotlinName
 kotlin.collections.Set
 getWindowLayoutInfo
 java.util.Iterator
-onWindowFocusChanged
 TextInputClient.performAction
+onWindowFocusChanged
 jar:file:
 ON_STOP
 addressState
@@ -1673,7 +1721,9 @@ Marking id:accessibility_custom_action_6:2131034141 used because it matches stri
 Marking id:accessibility_custom_action_7:2131034142 used because it matches string pool constant accessibility
 Marking id:accessibility_custom_action_8:2131034143 used because it matches string pool constant accessibility
 Marking id:accessibility_custom_action_9:2131034144 used because it matches string pool constant accessibility
+Marking drawable:navigation_empty_icon:2130968604 used because it matches string pool constant navigation_empty_icon
 Marking attr:shortcutMatchRequired:2130772015 used because it matches string pool constant short
+Marking id:time:2131034197 used because it matches string pool constant time
 Marking id:light:2131034166 used because it matches string pool constant light
 Marking attr:secondaryActivityName:2130772014 used because it matches string pool constant secondaryActivityName
 Marking id:info:2131034164 used because it matches string pool constant info
@@ -1738,8 +1788,8 @@ Marking color:androidx_core_ripple_material_light:2130837504 used because it mat
 Marking color:androidx_core_secondary_text_default_material_light:2130837505 used because it matches string pool constant android
 Marking id:androidx_window_activity_scope:2131034152 used because it matches string pool constant android
 Marking attr:mapType:2130772007 used because it matches string pool constant mapType
-Marking color:notification_action_color_filter:2130837517 used because it matches string pool constant notification
-Marking color:notification_icon_bg_color:2130837518 used because it matches string pool constant notification
+Marking color:notification_action_color_filter:2130837519 used because it matches string pool constant notification
+Marking color:notification_icon_bg_color:2130837520 used because it matches string pool constant notification
 Marking dimen:notification_action_icon_size:2130903047 used because it matches string pool constant notification
 Marking dimen:notification_action_text_size:2130903048 used because it matches string pool constant notification
 Marking dimen:notification_big_circle_margin:2130903049 used because it matches string pool constant notification
@@ -1755,17 +1805,17 @@ Marking dimen:notification_small_icon_size_as_large:2130903058 used because it m
 Marking dimen:notification_subtext_size:2130903059 used because it matches string pool constant notification
 Marking dimen:notification_top_pad:2130903060 used because it matches string pool constant notification
 Marking dimen:notification_top_pad_large_text:2130903061 used because it matches string pool constant notification
-Marking drawable:notification_action_background:2130968598 used because it matches string pool constant notification
-Marking drawable:notification_bg:2130968599 used because it matches string pool constant notification
-Marking drawable:notification_bg_low:2130968600 used because it matches string pool constant notification
-Marking drawable:notification_bg_low_normal:2130968601 used because it matches string pool constant notification
-Marking drawable:notification_bg_low_pressed:2130968602 used because it matches string pool constant notification
-Marking drawable:notification_bg_normal:2130968603 used because it matches string pool constant notification
-Marking drawable:notification_bg_normal_pressed:2130968604 used because it matches string pool constant notification
-Marking drawable:notification_icon_background:2130968605 used because it matches string pool constant notification
-Marking drawable:notification_template_icon_bg:2130968606 used because it matches string pool constant notification
-Marking drawable:notification_template_icon_low_bg:2130968607 used because it matches string pool constant notification
-Marking drawable:notification_tile_bg:2130968608 used because it matches string pool constant notification
+Marking drawable:notification_action_background:2130968605 used because it matches string pool constant notification
+Marking drawable:notification_bg:2130968606 used because it matches string pool constant notification
+Marking drawable:notification_bg_low:2130968607 used because it matches string pool constant notification
+Marking drawable:notification_bg_low_normal:2130968608 used because it matches string pool constant notification
+Marking drawable:notification_bg_low_pressed:2130968609 used because it matches string pool constant notification
+Marking drawable:notification_bg_normal:2130968610 used because it matches string pool constant notification
+Marking drawable:notification_bg_normal_pressed:2130968611 used because it matches string pool constant notification
+Marking drawable:notification_icon_background:2130968612 used because it matches string pool constant notification
+Marking drawable:notification_template_icon_bg:2130968613 used because it matches string pool constant notification
+Marking drawable:notification_template_icon_low_bg:2130968614 used because it matches string pool constant notification
+Marking drawable:notification_tile_bg:2130968615 used because it matches string pool constant notification
 Marking id:notification_background:2131034173 used because it matches string pool constant notification
 Marking id:notification_main_column:2131034174 used because it matches string pool constant notification
 Marking id:notification_main_column_container:2131034175 used because it matches string pool constant notification
@@ -1858,6 +1908,8 @@ Marking id:line3:2131034168 used because it matches string pool constant line
 @attr/zOrderOnTop : reachable=false
 @color/androidx_core_ripple_material_light : reachable=true
 @color/androidx_core_secondary_text_default_material_light : reachable=true
+@color/call_notification_answer_color : reachable=false
+@color/call_notification_decline_color : reachable=false
 @color/common_google_signin_btn_text_dark : reachable=false
     @color/common_google_signin_btn_text_dark_disabled
     @color/common_google_signin_btn_text_dark_pressed
@@ -1949,7 +2001,14 @@ Marking id:line3:2131034168 used because it matches string pool constant line
 @drawable/common_google_signin_btn_text_light_normal_background : reachable=false
 @drawable/googleg_disabled_color_18 : reachable=false
 @drawable/googleg_standard_color_18 : reachable=false
+@drawable/ic_call_answer : reachable=false
+@drawable/ic_call_answer_low : reachable=false
+@drawable/ic_call_answer_video : reachable=false
+@drawable/ic_call_answer_video_low : reachable=false
+@drawable/ic_call_decline : reachable=false
+@drawable/ic_call_decline_low : reachable=false
 @drawable/launch_background : reachable=false
+@drawable/navigation_empty_icon : reachable=true
 @drawable/notification_action_background : reachable=true
     @color/androidx_core_ripple_material_light
     @dimen/compat_button_inset_horizontal_material
@@ -2059,7 +2118,7 @@ Marking id:line3:2131034168 used because it matches string pool constant line
 @id/terrain : reachable=false
 @id/text : reachable=true
 @id/text2 : reachable=true
-@id/time : reachable=false
+@id/time : reachable=true
 @id/title : reachable=true
 @id/view_tree_lifecycle_owner : reachable=true
 @id/wide : reachable=false
@@ -2092,6 +2151,13 @@ Marking id:line3:2131034168 used because it matches string pool constant line
 @layout/notification_template_part_time : reachable=true
     @style/TextAppearance_Compat_Notification_Time
 @mipmap/ic_launcher : reachable=true
+@string/call_notification_answer_action : reachable=false
+@string/call_notification_answer_video_action : reachable=false
+@string/call_notification_decline_action : reachable=false
+@string/call_notification_hang_up_action : reachable=false
+@string/call_notification_incoming_text : reachable=false
+@string/call_notification_ongoing_text : reachable=false
+@string/call_notification_screening_text : reachable=false
 @string/common_google_play_services_enable_button : reachable=true
 @string/common_google_play_services_enable_text : reachable=true
 @string/common_google_play_services_enable_title : reachable=true
@@ -2154,8 +2220,8 @@ The root reachable resources are:
  attr:shortcutMatchRequired:2130772015
  color:androidx_core_ripple_material_light:2130837504
  color:androidx_core_secondary_text_default_material_light:2130837505
- color:notification_action_color_filter:2130837517
- color:notification_icon_bg_color:2130837518
+ color:notification_action_color_filter:2130837519
+ color:notification_icon_bg_color:2130837520
  dimen:notification_action_icon_size:2130903047
  dimen:notification_action_text_size:2130903048
  dimen:notification_big_circle_margin:2130903049
@@ -2172,17 +2238,18 @@ The root reachable resources are:
  dimen:notification_top_pad:2130903060
  dimen:notification_top_pad_large_text:2130903061
  drawable:common_full_open_on_phone:2130968576
- drawable:notification_action_background:2130968598
- drawable:notification_bg:2130968599
- drawable:notification_bg_low:2130968600
- drawable:notification_bg_low_normal:2130968601
- drawable:notification_bg_low_pressed:2130968602
- drawable:notification_bg_normal:2130968603
- drawable:notification_bg_normal_pressed:2130968604
- drawable:notification_icon_background:2130968605
- drawable:notification_template_icon_bg:2130968606
- drawable:notification_template_icon_low_bg:2130968607
- drawable:notification_tile_bg:2130968608
+ drawable:navigation_empty_icon:2130968604
+ drawable:notification_action_background:2130968605
+ drawable:notification_bg:2130968606
+ drawable:notification_bg_low:2130968607
+ drawable:notification_bg_low_normal:2130968608
+ drawable:notification_bg_low_pressed:2130968609
+ drawable:notification_bg_normal:2130968610
+ drawable:notification_bg_normal_pressed:2130968611
+ drawable:notification_icon_background:2130968612
+ drawable:notification_template_icon_bg:2130968613
+ drawable:notification_template_icon_low_bg:2130968614
+ drawable:notification_tile_bg:2130968615
  id:accessibility_action_clickable_span:2131034112
  id:accessibility_custom_action_0:2131034113
  id:accessibility_custom_action_1:2131034114
@@ -2243,6 +2310,7 @@ The root reachable resources are:
  id:tag_window_insets_animation_callback:2131034193
  id:text:2131034195
  id:text2:2131034196
+ id:time:2131034197
  id:title:2131034198
  id:view_tree_lifecycle_owner:2131034199
  integer:google_play_services_version:2131099648
@@ -2253,22 +2321,22 @@ The root reachable resources are:
  layout:notification_template_part_chronometer:2131165189
  layout:notification_template_part_time:2131165190
  mipmap:ic_launcher:2131230720
- string:common_google_play_services_enable_button:2131296256
- string:common_google_play_services_enable_text:2131296257
- string:common_google_play_services_enable_title:2131296258
- string:common_google_play_services_install_button:2131296259
- string:common_google_play_services_install_text:2131296260
- string:common_google_play_services_install_title:2131296261
- string:common_google_play_services_notification_channel_name:2131296262
- string:common_google_play_services_notification_ticker:2131296263
- string:common_google_play_services_unknown_issue:2131296264
- string:common_google_play_services_unsupported_text:2131296265
- string:common_google_play_services_update_button:2131296266
- string:common_google_play_services_update_text:2131296267
- string:common_google_play_services_update_title:2131296268
- string:common_google_play_services_updating_text:2131296269
- string:common_google_play_services_wear_update_text:2131296270
- string:common_open_on_phone:2131296271
+ string:common_google_play_services_enable_button:2131296263
+ string:common_google_play_services_enable_text:2131296264
+ string:common_google_play_services_enable_title:2131296265
+ string:common_google_play_services_install_button:2131296266
+ string:common_google_play_services_install_text:2131296267
+ string:common_google_play_services_install_title:2131296268
+ string:common_google_play_services_notification_channel_name:2131296269
+ string:common_google_play_services_notification_ticker:2131296270
+ string:common_google_play_services_unknown_issue:2131296271
+ string:common_google_play_services_unsupported_text:2131296272
+ string:common_google_play_services_update_button:2131296273
+ string:common_google_play_services_update_text:2131296274
+ string:common_google_play_services_update_title:2131296275
+ string:common_google_play_services_updating_text:2131296276
+ string:common_google_play_services_wear_update_text:2131296277
+ string:common_open_on_phone:2131296278
  style:LaunchTheme:2131361792
  style:NormalTheme:2131361793
 Skipped unused resource res/color/common_google_signin_btn_text_dark.xml: 1105 bytes (replaced with small dummy file of size 9 bytes)
@@ -2288,28 +2356,70 @@ Skipped unused resource res/drawable/common_google_signin_btn_text_disabled.xml:
 Skipped unused resource res/drawable/common_google_signin_btn_text_light.xml: 848 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/drawable/common_google_signin_btn_text_light_focused.xml: 1019 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/drawable/common_google_signin_btn_text_light_normal.xml: 661 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable-ldpi-v4/ic_call_answer.png: 270 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-ldpi-v4/ic_call_answer_low.png: 270 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-ldpi-v4/ic_call_answer_video.png: 199 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-ldpi-v4/ic_call_answer_video_low.png: 199 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-ldpi-v4/ic_call_decline.png: 201 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-ldpi-v4/ic_call_decline_low.png: 201 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-mdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png: 610 bytes (replaced with small dummy file of size 77 bytes)
 Skipped unused resource res/drawable-mdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png: 500 bytes (replaced with small dummy file of size 77 bytes)
 Skipped unused resource res/drawable-mdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png: 615 bytes (replaced with small dummy file of size 77 bytes)
 Skipped unused resource res/drawable-mdpi-v4/common_google_signin_btn_text_light_normal_background.9.png: 465 bytes (replaced with small dummy file of size 77 bytes)
 Skipped unused resource res/drawable-mdpi-v4/googleg_disabled_color_18.png: 281 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-mdpi-v4/googleg_standard_color_18.png: 562 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-mdpi-v4/ic_call_answer.png: 317 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-mdpi-v4/ic_call_answer_low.png: 317 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-mdpi-v4/ic_call_answer_video.png: 206 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-mdpi-v4/ic_call_answer_video_low.png: 206 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-mdpi-v4/ic_call_decline.png: 264 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-mdpi-v4/ic_call_decline_low.png: 264 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png: 897 bytes (replaced with small dummy file of size 77 bytes)
 Skipped unused resource res/drawable-hdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png: 683 bytes (replaced with small dummy file of size 77 bytes)
 Skipped unused resource res/drawable-hdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png: 960 bytes (replaced with small dummy file of size 77 bytes)
 Skipped unused resource res/drawable-hdpi-v4/common_google_signin_btn_text_light_normal_background.9.png: 694 bytes (replaced with small dummy file of size 77 bytes)
 Skipped unused resource res/drawable-hdpi-v4/googleg_disabled_color_18.png: 410 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-hdpi-v4/googleg_standard_color_18.png: 808 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-hdpi-v4/ic_call_answer.png: 472 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-hdpi-v4/ic_call_answer_low.png: 472 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-hdpi-v4/ic_call_answer_video.png: 254 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-hdpi-v4/ic_call_answer_video_low.png: 254 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-hdpi-v4/ic_call_decline.png: 375 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-hdpi-v4/ic_call_decline_low.png: 375 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png: 1032 bytes (replaced with small dummy file of size 77 bytes)
 Skipped unused resource res/drawable-xhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png: 776 bytes (replaced with small dummy file of size 77 bytes)
 Skipped unused resource res/drawable-xhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png: 1086 bytes (replaced with small dummy file of size 77 bytes)
 Skipped unused resource res/drawable-xhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png: 808 bytes (replaced with small dummy file of size 77 bytes)
 Skipped unused resource res/drawable-xhdpi-v4/googleg_disabled_color_18.png: 516 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-xhdpi-v4/googleg_standard_color_18.png: 982 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xhdpi-v4/ic_call_answer.png: 623 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xhdpi-v4/ic_call_answer_low.png: 623 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xhdpi-v4/ic_call_answer_video.png: 290 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xhdpi-v4/ic_call_answer_video_low.png: 290 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xhdpi-v4/ic_call_decline.png: 452 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xhdpi-v4/ic_call_decline_low.png: 452 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-xxhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png: 1510 bytes (replaced with small dummy file of size 77 bytes)
 Skipped unused resource res/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png: 1138 bytes (replaced with small dummy file of size 77 bytes)
 Skipped unused resource res/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png: 1638 bytes (replaced with small dummy file of size 77 bytes)
 Skipped unused resource res/drawable-xxhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png: 1255 bytes (replaced with small dummy file of size 77 bytes)
 Skipped unused resource res/drawable-xxhdpi-v4/googleg_disabled_color_18.png: 727 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-xxhdpi-v4/googleg_standard_color_18.png: 1441 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xxhdpi-v4/ic_call_answer.png: 884 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xxhdpi-v4/ic_call_answer_low.png: 884 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xxhdpi-v4/ic_call_answer_video.png: 384 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xxhdpi-v4/ic_call_answer_video_low.png: 384 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xxhdpi-v4/ic_call_decline.png: 628 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xxhdpi-v4/ic_call_decline_low.png: 628 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xxxhdpi-v4/ic_call_answer.png: 1171 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xxxhdpi-v4/ic_call_answer_low.png: 1171 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xxxhdpi-v4/ic_call_answer_video.png: 465 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xxxhdpi-v4/ic_call_answer_video_low.png: 465 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xxxhdpi-v4/ic_call_decline.png: 823 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xxxhdpi-v4/ic_call_decline_low.png: 823 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-anydpi-v21/ic_call_answer.xml: 1515 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable-anydpi-v21/ic_call_answer_low.xml: 1373 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable-anydpi-v21/ic_call_answer_video.xml: 931 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable-anydpi-v21/ic_call_answer_video_low.xml: 789 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable-anydpi-v21/ic_call_decline.xml: 1689 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable-anydpi-v21/ic_call_decline_low.xml: 1547 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/layout/custom_dialog.xml: 828 bytes (replaced with small dummy file of size 9 bytes)

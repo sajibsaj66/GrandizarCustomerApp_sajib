@@ -1,20 +1,22 @@
-com.example.grandizar_customer_app_sajib.app-jetified-window-1.0.0-beta04-0 C:\Users\ssk12\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\res
-com.example.grandizar_customer_app_sajib.app-jetified-play-services-basement-18.1.0-1 C:\Users\ssk12\.gradle\caches\transforms-3\58aa1384bde170d075503b845cfcf44c\transformed\jetified-play-services-basement-18.1.0\res
-com.example.grandizar_customer_app_sajib.app-jetified-play-services-base-18.1.0-2 C:\Users\ssk12\.gradle\caches\transforms-3\781e5567158e59d38ee2b89930f9808b\transformed\jetified-play-services-base-18.1.0\res
-com.example.grandizar_customer_app_sajib.app-jetified-annotation-experimental-1.3.0-3 C:\Users\ssk12\.gradle\caches\transforms-3\937d6edc8055f6701a18eeac1a67afe6\transformed\jetified-annotation-experimental-1.3.0\res
-com.example.grandizar_customer_app_sajib.app-lifecycle-runtime-2.3.1-4 C:\Users\ssk12\.gradle\caches\transforms-3\9a249567dcb8025899915ed9a2426636\transformed\lifecycle-runtime-2.3.1\res
-com.example.grandizar_customer_app_sajib.app-jetified-window-java-1.0.0-beta04-5 C:\Users\ssk12\.gradle\caches\transforms-3\ae81e06d24c799147c26814497a2a305\transformed\jetified-window-java-1.0.0-beta04\res
-com.example.grandizar_customer_app_sajib.app-core-1.9.0-6 C:\Users\ssk12\.gradle\caches\transforms-3\c2aff38445ebad8ddeaa989ecf50f56e\transformed\core-1.9.0\res
-com.example.grandizar_customer_app_sajib.app-jetified-play-services-maps-18.1.0-7 C:\Users\ssk12\.gradle\caches\transforms-3\d7f7973f000d5c8945a05a4db1417b66\transformed\jetified-play-services-maps-18.1.0\res
-com.example.grandizar_customer_app_sajib.app-main-8 D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\android\app\src\main\res
-com.example.grandizar_customer_app_sajib.app-release-9 D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\android\app\src\release\res
-com.example.grandizar_customer_app_sajib.app-pngs-10 D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\app\generated\res\pngs\release
-com.example.grandizar_customer_app_sajib.app-resValues-11 D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\app\generated\res\resValues\release
-com.example.grandizar_customer_app_sajib.app-rs-12 D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\app\generated\res\rs\release
-com.example.grandizar_customer_app_sajib.app-mergeReleaseResources-13 D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\app\intermediates\incremental\release\mergeReleaseResources\merged.dir
-com.example.grandizar_customer_app_sajib.app-mergeReleaseResources-14 D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\app\intermediates\incremental\release\mergeReleaseResources\stripped.dir
-com.example.grandizar_customer_app_sajib.app-merged_res-15 D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\app\intermediates\merged_res\release
-com.example.grandizar_customer_app_sajib.app-packaged_res-16 D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\flutter_plugin_android_lifecycle\intermediates\packaged_res\release
-com.example.grandizar_customer_app_sajib.app-packaged_res-17 D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\geolocator_android\intermediates\packaged_res\release
-com.example.grandizar_customer_app_sajib.app-packaged_res-18 D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\google_maps_flutter_android\intermediates\packaged_res\release
-com.example.grandizar_customer_app_sajib.app-packaged_res-19 D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\path_provider_android\intermediates\packaged_res\release
+com.example.grandizar_customer_app_sajib.app-jetified-window-1.0.0-beta04-0 C:\Users\ssk12\.gradle\caches\transforms-3\1ba8d05a0965080943586c494e0aa4b2\transformed\jetified-window-1.0.0-beta04\res
+com.example.grandizar_customer_app_sajib.app-core-1.10.1-1 C:\Users\ssk12\.gradle\caches\transforms-3\1ef430611002ea02c2a417d6a8e7a0fc\transformed\core-1.10.1\res
+com.example.grandizar_customer_app_sajib.app-jetified-play-services-maps-18.1.0-2 C:\Users\ssk12\.gradle\caches\transforms-3\23d3ba4b9c9430498a2d37bf1083a8e9\transformed\jetified-play-services-maps-18.1.0\res
+com.example.grandizar_customer_app_sajib.app-jetified-play-services-base-18.1.0-3 C:\Users\ssk12\.gradle\caches\transforms-3\26122ed33b1a29cda1765a3c6ed39a08\transformed\jetified-play-services-base-18.1.0\res
+com.example.grandizar_customer_app_sajib.app-jetified-core-ktx-1.10.1-4 C:\Users\ssk12\.gradle\caches\transforms-3\44130fe9f7aa4e479b7c41de20944d33\transformed\jetified-core-ktx-1.10.1\res
+com.example.grandizar_customer_app_sajib.app-jetified-play-services-basement-18.1.0-5 C:\Users\ssk12\.gradle\caches\transforms-3\8435c608dc11aec23a8235e2884813fc\transformed\jetified-play-services-basement-18.1.0\res
+com.example.grandizar_customer_app_sajib.app-jetified-window-java-1.0.0-beta04-6 C:\Users\ssk12\.gradle\caches\transforms-3\c132967ebfb7143f82aaee5ad8c6043e\transformed\jetified-window-java-1.0.0-beta04\res
+com.example.grandizar_customer_app_sajib.app-lifecycle-runtime-2.3.1-7 C:\Users\ssk12\.gradle\caches\transforms-3\d8adf09754d9400d948dbb9ae6e0843b\transformed\lifecycle-runtime-2.3.1\res
+com.example.grandizar_customer_app_sajib.app-jetified-annotation-experimental-1.3.0-8 C:\Users\ssk12\.gradle\caches\transforms-3\da5e209f407c372afbe7f45e911b7bd6\transformed\jetified-annotation-experimental-1.3.0\res
+com.example.grandizar_customer_app_sajib.app-main-9 D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\android\app\src\main\res
+com.example.grandizar_customer_app_sajib.app-release-10 D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\android\app\src\release\res
+com.example.grandizar_customer_app_sajib.app-pngs-11 D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\app\generated\res\pngs\release
+com.example.grandizar_customer_app_sajib.app-resValues-12 D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\app\generated\res\resValues\release
+com.example.grandizar_customer_app_sajib.app-rs-13 D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\app\generated\res\rs\release
+com.example.grandizar_customer_app_sajib.app-mergeReleaseResources-14 D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\app\intermediates\incremental\release\mergeReleaseResources\merged.dir
+com.example.grandizar_customer_app_sajib.app-mergeReleaseResources-15 D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\app\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+com.example.grandizar_customer_app_sajib.app-merged_res-16 D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\app\intermediates\merged_res\release
+com.example.grandizar_customer_app_sajib.app-packaged_res-17 D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\flutter_plugin_android_lifecycle\intermediates\packaged_res\release
+com.example.grandizar_customer_app_sajib.app-packaged_res-18 D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\geolocator_android\intermediates\packaged_res\release
+com.example.grandizar_customer_app_sajib.app-packaged_res-19 D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\google_maps_flutter_android\intermediates\packaged_res\release
+com.example.grandizar_customer_app_sajib.app-packaged_res-20 D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\location\intermediates\packaged_res\release
+com.example.grandizar_customer_app_sajib.app-packaged_res-21 D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\path_provider_android\intermediates\packaged_res\release

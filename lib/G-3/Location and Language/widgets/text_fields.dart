@@ -16,7 +16,7 @@ class CustomBoxField extends StatelessWidget {
 
   final double borderRadius;
   final String hintText;
-  final Icon? suffixIcon;
+  final Widget? suffixIcon;
   final double width;
   TextEditingController? controller;
   final TextInputType textInputType;
@@ -34,9 +34,14 @@ class CustomBoxField extends StatelessWidget {
             controller: controller,
             keyboardType: textInputType,
             decoration: InputDecoration(
+              filled: true,
+                fillColor: AppColors.awashColor,
                 contentPadding: const EdgeInsets.all(16),
+                enabledBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                  borderSide: BorderSide(width: 1, color: Colors.yellow)
+                ),
                 hintStyle: TextStyle(fontSize: 14.sp),
-                border: InputBorder.none,
                 hintText: hintText,
                 suffixIcon: suffixIcon),
           ),

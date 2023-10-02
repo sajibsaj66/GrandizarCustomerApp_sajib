@@ -1,8 +1,9 @@
 import 'package:country_code_picker/country_code_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/utils/colors.dart';
-import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/widgets/text_style.dart';
+
+import '../index.dart';
+import 'text_style.dart';
 
 class CustomTextField extends StatelessWidget {
   final bool? isCountryPicker;

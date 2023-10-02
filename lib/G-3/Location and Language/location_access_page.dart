@@ -1,43 +1,34 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:geolocator/geolocator.dart';
-import 'package:grandizar_customer_app_sajib/G-3/Location%20and%20Language/select_location.dart';
-
-import 'hubs_page.dart';
-import 'utils/app_imges.dart';
-import 'utils/colors.dart';
-import 'widgets/buttons.dart';
-import 'widgets/texts.dart';
+import 'index.dart';
+import 'package:location/location.dart';
 
 class LocationAccessPage extends StatelessWidget {
   LocationAccessPage({super.key});
 
-  Position? position;
+  Future requestPermission() async {
+    Location location = Location();
+    bool locationService;
+    PermissionStatus permissionStatus;
+    LocationData locationData;
 
-  Future<Position> _determinePosition() async {
-    bool serviceEnabled;
-    LocationPermission permission;
-
-    serviceEnabled = await Geolocator.isLocationServiceEnabled();
-    if (!serviceEnabled) {
-      return Future.error('Location services are disabled.');
-    }
-
-    permission = await Geolocator.checkPermission();
-    if (permission == LocationPermission.denied) {
-      permission = await Geolocator.requestPermission();
-      if (permission == LocationPermission.denied) {
-        return Future.error('Location permissions are denied');
+    locationService = await location.serviceEnabled();
+    if (!locationService) {
+      locationService = await location.requestService();
+      if (!locationService) {
+        return;
       }
     }
 
-    if (permission == LocationPermission.deniedForever) {
-      return Future.error(
-          'Location permissions are permanently denied, we cannot request permissions.');
+    permissionStatus = await location.hasPermission();
+    if (permissionStatus == PermissionStatus.denied) {
+      permissionStatus = await location.requestPermission();
+      if (permissionStatus != PermissionStatus.granted) {
+        return;
+      }
     }
 
-    return await Geolocator.getCurrentPosition(
-        desiredAccuracy: LocationAccuracy.high);
+    locationData = await location.getLocation();
   }
 
   @override
@@ -59,15 +50,11 @@ class LocationAccessPage extends StatelessWidget {
             CustomButton(
                 title: 'Allow Location Access',
                 onPressed: () async {
-                  try {
-                    Position position = await _determinePosition();
-                    Navigator.push(
+                  await requestPermission();
+                  Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => const HubsPage()),
-                    );
-                  } catch (e) {
-                    print('Error getting location: $e');
-                  }
+                      MaterialPageRoute(
+                          builder: (context) => const HubsPage()));
                 }),
             SizedBox(height: 20.h),
             InkWell(

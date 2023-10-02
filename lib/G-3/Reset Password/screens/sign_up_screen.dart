@@ -4,14 +4,12 @@ import 'package:get/get.dart';
 import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/controller/checkbox_controller.dart';
 import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/screens/login_screen.dart';
 import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/screens/verification_screen.dart';
-import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/utils/colors.dart';
-import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/utils/static_data.dart';
 import 'package:grandizar_customer_app_sajib/G-3/Location%20and%20Language/widgets/app_heading.dart';
 import 'package:grandizar_customer_app_sajib/G-3/Location%20and%20Language/widgets/custom_text_field.dart';
 
-import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/widgets/text_style.dart';
-
-import '../../Location and Language/utils/primary_button.dart';
+import '../../Location and Language/index.dart';
+import '../../Location and Language/utils/static_data.dart';
+import '../../Location and Language/widgets/text_style.dart';
 
 class SignupScreen extends StatelessWidget {
   SignupScreen({super.key});
