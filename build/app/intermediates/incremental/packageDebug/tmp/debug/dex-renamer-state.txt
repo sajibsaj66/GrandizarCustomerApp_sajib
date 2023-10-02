@@ -1,9 +1,9 @@
-#Sun Oct 01 22:40:25 BDT 2023
-base.0=D\:\\Sizan\\Desh IT\\GrandizarCustomerApp_sajib\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=D\:\\Sizan\\Desh IT\\GrandizarCustomerApp_sajib\\build\\app\\intermediates\\dex\\debug\\mergeLibDexDebug\\0\\classes.dex
-base.2=D\:\\Sizan\\Desh IT\\GrandizarCustomerApp_sajib\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.3=D\:\\Sizan\\Desh IT\\GrandizarCustomerApp_sajib\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
-base.4=D\:\\Sizan\\Desh IT\\GrandizarCustomerApp_sajib\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
+#Mon Oct 02 09:11:32 BDT 2023
+base.0=C\:\\Users\\User\\StudioProjects\\GrandizarCustomerApp_sajib\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\User\\StudioProjects\\GrandizarCustomerApp_sajib\\build\\app\\intermediates\\dex\\debug\\mergeLibDexDebug\\0\\classes.dex
+base.2=C\:\\Users\\User\\StudioProjects\\GrandizarCustomerApp_sajib\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.3=C\:\\Users\\User\\StudioProjects\\GrandizarCustomerApp_sajib\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
+base.4=C\:\\Users\\User\\StudioProjects\\GrandizarCustomerApp_sajib\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=0/classes.dex
