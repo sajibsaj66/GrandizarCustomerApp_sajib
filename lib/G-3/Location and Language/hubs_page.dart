@@ -36,7 +36,7 @@ class _HubsPageState extends State<HubsPage> {
             radius: 22.r,
             child: IconButton(onPressed: () {
               Navigator.pop(context);
-            }, icon: Icon(Icons.arrow_back_ios_new, color: AppColors.redColor)),
+            }, icon: const Icon(Icons.arrow_back_ios_new, color: AppColors.redColor)),
           ),
         ),
         title: CustomText(title: 'List of Hubs', fontSize: 22.spMax),

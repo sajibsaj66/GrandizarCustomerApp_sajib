@@ -57,7 +57,7 @@ class NewPasswordSetScreen extends StatelessWidget {
         PrimaryBtn(
           title: AppStaticData.resetPassword,
           onPressed: () {
-            Get.to(() => PasswordChanged());
+            Get.to(() => const PasswordChanged());
           },
         ),
         SizedBox(

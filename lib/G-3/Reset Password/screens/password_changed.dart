@@ -16,9 +16,9 @@ class PasswordChanged extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(AppImages.successfulLogo),
-            SizedBox(height: 30),
-            Text('password changed successfully', style: subTitleStyle),
-            SizedBox(height: 100),
+            const SizedBox(height: 30),
+            const Text('password changed successfully', style: subTitleStyle),
+            const SizedBox(height: 100),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: PrimaryBtn(title: 'Login  Now', onPressed: (){
