@@ -89,12 +89,12 @@ class _HubsPageState extends State<HubsPage> {
                             ),
                             markers: <Marker>{
                               Marker(
-                                markerId: MarkerId('your_location'),
+                                markerId: const MarkerId('your_location'),
                                 position: LatLng(
                                     locations[selectedIndex].latitude,
                                     locations[selectedIndex]
                                         .longitude), // Set marker coordinates
-                                infoWindow: InfoWindow(title: 'Your Location'),
+                                infoWindow: const InfoWindow(title: 'Your Location'),
                               ),
                             },
                             onMapCreated: (GoogleMapController controller) {
