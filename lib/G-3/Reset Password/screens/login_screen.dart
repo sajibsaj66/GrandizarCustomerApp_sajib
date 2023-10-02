@@ -7,10 +7,12 @@ import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/screens/sign_u
 import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/screens/verification_screen.dart';
 import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/utils/colors.dart';
 import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/utils/static_data.dart';
-import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/widgets/app_heading.dart';
-import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/widgets/custom_text_field.dart';
-import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/widgets/primary_button.dart';
+import 'package:grandizar_customer_app_sajib/G-3/Location%20and%20Language/widgets/app_heading.dart';
+import 'package:grandizar_customer_app_sajib/G-3/Location%20and%20Language/widgets/custom_text_field.dart';
+import 'package:grandizar_customer_app_sajib/G-3/Location%20and%20Language/widgets/primary_button.dart';
 import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/widgets/text_style.dart';
+
+import '../../Location and Language/utils/primary_button.dart';
 
 class LoginScreen extends StatelessWidget {
   LoginScreen({super.key});
