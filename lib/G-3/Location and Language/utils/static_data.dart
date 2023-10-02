@@ -64,4 +64,5 @@ class AppStaticData{
   // static const reg ='';
   // static const reg ='';
 
-}
+  }
+
