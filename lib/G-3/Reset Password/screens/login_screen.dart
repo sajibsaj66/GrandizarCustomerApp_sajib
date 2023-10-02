@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:grandizar_customer_app_sajib/G-3/Location%20and%20Language/location_access_page.dart';
-import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/controller/login_controller.dart';
 import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/screens/reset_pass.dart';
 import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/screens/sign_up_screen.dart';
 import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/screens/verification_screen.dart';
@@ -11,50 +10,51 @@ import 'package:grandizar_customer_app_sajib/G-3/Location%20and%20Language/widge
 import '../../Location and Language/index.dart';
 import '../../Location and Language/widgets/text_style.dart';
 
-class LoginScreen extends StatelessWidget {
+class LoginScreen extends StatefulWidget {
   LoginScreen({super.key});
-  final LoginController loginController = Get.put(LoginController());
+
+  @override
+  State<LoginScreen> createState() => _LoginScreenState();
+}
+
+class _LoginScreenState extends State<LoginScreen> {
+  bool isPasswordVisible = true;
+  bool obscureText = true;
+  void changePasswordVisibility() {
+    isPasswordVisible = !isPasswordVisible;
+    obscureText = !obscureText;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: ListView(padding: EdgeInsets.all(Get.width * 0.05), children: [
-      SizedBox(
-        height: Get.height * 0.05,
-      ),
+        body: ListView(padding: EdgeInsets.all(16), children: [
       AppHeading(title: AppStaticData.logIn),
-      SizedBox(
-        height: Get.height * 0.05,
-      ),
+      SizedBox(height: 10.h),
       CustomTextField(
         hintText: AppStaticData.emailAddress,
         prefixIcon: Icons.email,
         title: AppStaticData.email,
       ),
-      SizedBox(
-        height: Get.height * 0.02,
-      ),
-      Obx(
-        () => CustomTextField(
-          hintText: AppStaticData.password,
-          prefixIcon: Icons.lock,
-          title: AppStaticData.password,
-          obscureText: loginController.obscureText.value,
-          suffixWidget: InkWell(
-            onTap: () {
-              loginController.changePasswordVisibility();
-            },
-            child: Icon(
-              loginController.isPasswordVisible.value
-                  ? Icons.visibility_off
-                  : Icons.visibility,
-              color: AppColors.secondaryBlackColor,
-            ),
+      SizedBox(height: 10.h),
+      CustomTextField(
+        hintText: AppStaticData.password,
+        prefixIcon: Icons.lock,
+        title: AppStaticData.password,
+        obscureText: obscureText,
+        suffixWidget: InkWell(
+          onTap: () {
+            setState(() {
+              changePasswordVisibility();
+            });
+          },
+          child: Icon(
+            isPasswordVisible ? Icons.visibility_off : Icons.visibility,
+            color: AppColors.secondaryBlackColor,
           ),
         ),
       ),
-      SizedBox(
-        height: Get.height * 0.02,
-      ),
+      SizedBox(height: 10.h),
       InkWell(
         onTap: () {
           //create bottom sheet for forgot password chosse phone or email
@@ -65,8 +65,8 @@ class LoginScreen extends StatelessWidget {
             context: context,
             builder: (BuildContext context) {
               return Container(
-                height: Get.height * 0.35,
-                padding: EdgeInsets.all(Get.width * 0.05),
+                height: 260.h,
+                padding: EdgeInsets.all(12),
                 decoration: const BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
@@ -80,9 +80,7 @@ class LoginScreen extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Text(AppStaticData.resetPassword, style: titleStyle),
-                    SizedBox(
-                      height: Get.height * 0.02,
-                    ),
+                    SizedBox(height: 10.h),
                     Container(
                       decoration: BoxDecoration(
                         color: AppColors.fadeBlue,
@@ -90,9 +88,11 @@ class LoginScreen extends StatelessWidget {
                       ),
                       child: ListTile(
                         onTap: () {
-                          Get.to(() => const ResetPwdWithEmailPhone(
-                                isEmail: true,
-                              ));
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                      ResetPwdWithEmailPhone(isEmail: true)));
                         },
                         leading: const Icon(
                           Icons.email,
@@ -105,9 +105,7 @@ class LoginScreen extends StatelessWidget {
                             style: subTitleStyle),
                       ),
                     ),
-                    SizedBox(
-                      height: Get.height * 0.02,
-                    ),
+                    SizedBox(height: 10.h),
                     Container(
                       decoration: BoxDecoration(
                         color: AppColors.fadeBlue,
@@ -115,7 +113,11 @@ class LoginScreen extends StatelessWidget {
                       ),
                       child: ListTile(
                         onTap: () {
-                          Get.to(() => const ResetPwdWithEmailPhone());
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                      ResetPwdWithEmailPhone()));
                         },
                         leading: const Icon(
                           Icons.phone,
@@ -140,60 +142,51 @@ class LoginScreen extends StatelessWidget {
           style: subTitleStyle.copyWith(color: AppColors.redColor),
         ),
       ),
-      SizedBox(
-        height: Get.height * 0.02,
-      ),
-      PrimaryBtn(
-        title: AppStaticData.logIn,
-        onPressed: () {
-          Navigator.push(context,
-              MaterialPageRoute(builder: (context) => LocationAccessPage()));
-        },
-      ),
-      SizedBox(
-        height: Get.height * 0.02,
-      ),
+      SizedBox(height: 20.h),
+      CustomButton(
+          title: AppStaticData.logIn,
+          onPressed: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => LocationAccessPage()));
+          }),
+      SizedBox(height: 20.h),
       TextInTheMiddle(text: AppStaticData.loginwithmobilenumber),
-      SizedBox(
-        height: Get.height * 0.02,
-      ),
+      SizedBox(height: 10.h),
       CustomTextField(
         isCountryPicker: true,
         hintText: AppStaticData.phoneNumber,
         prefixIcon: Icons.lock,
         title: "",
       ),
-      SizedBox(
-        height: Get.height * 0.02,
-      ),
-      PrimaryBtn(
-        title: AppStaticData.SendCodeforLogIn,
-        onPressed: () {
-          Get.to(() => const VerificationScreen(
-                sendcodeForLogin: true,
-              ));
-        },
-      ),
-      SizedBox(
-        height: Get.height * 0.02,
-      ),
+      SizedBox(height: 20.h),
+      CustomButton(
+          title: AppStaticData.SendCodeforLogIn,
+          onPressed: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) =>
+                        VerificationScreen(sendcodeForLogin: true)));
+          }),
+      SizedBox(height: 20.h),
       Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
             AppStaticData.newSignUp,
             style: titleStyle.copyWith(
-              fontSize: 15,
+              fontSize: 15.sp,
             ),
           ),
           TextButton(
             onPressed: () {
-              Get.to(() => SignupScreen());
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => SignupScreen()));
             },
             child: Text(
               AppStaticData.signUp,
               style: titleStyle.copyWith(
-                fontSize: 15,
+                fontSize: 15.sp,
                 color: AppColors.redColor,
               ),
             ),

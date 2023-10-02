@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/screens/login_screen.dart';
 
 import '../../Location and Language/index.dart';
@@ -16,15 +16,17 @@ class PasswordChanged extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(AppImages.successfulLogo),
-            const SizedBox(height: 30),
+            SizedBox(height: 30.h),
             const Text('password changed successfully', style: subTitleStyle),
-            const SizedBox(height: 100),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
-              child: PrimaryBtn(title: 'Login  Now', onPressed: (){
-                Get.to(LoginScreen());
-              }),
-            )
+            SizedBox(height: 100.h),
+            CustomButton(
+                title: 'Login Now',
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => LoginScreen()));
+                })
           ],
         ),
       ),

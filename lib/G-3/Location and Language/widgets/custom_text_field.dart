@@ -1,6 +1,6 @@
 import 'package:country_code_picker/country_code_picker.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../index.dart';
 import 'text_style.dart';
@@ -29,9 +29,7 @@ class CustomTextField extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         title == '' ? const SizedBox() : Text(title, style: titleStyle),
-        SizedBox(
-          height: Get.height * 0.01,
-        ),
+        SizedBox(height: 10.h),
         TextFormField(
           controller: txtController,
           obscureText: obscureText ?? false,

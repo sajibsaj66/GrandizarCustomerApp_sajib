@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../index.dart';
 import 'text_style.dart';
 
@@ -17,9 +16,7 @@ class AppHeading extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Image.asset(AppImages.grandizarLogo),
-        SizedBox(
-          height: Get.height * 0.05,
-        ),
+        SizedBox(height: 20.h),
         Text(title,
             style: titleStyle.copyWith(
               fontSize: 25,
