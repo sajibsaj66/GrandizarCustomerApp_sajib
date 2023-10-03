@@ -35,7 +35,48 @@ class CustomButton extends StatelessWidget {
               fontWeight: FontWeight.bold,
               txtColor: buttonColor == AppColors.redColor
                   ? AppColors.whiteColor
-                  : AppColors.whiteColor)),
+                  : AppColors.redColor)),
+    );
+  }
+}
+
+
+
+
+
+class CustomButtonMedium extends StatelessWidget {
+  const CustomButtonMedium(
+      {super.key,
+        required this.title,
+        required this.onPressed,
+        this.width = 150, this.height = 50,
+        this.buttonColor = AppColors.redColor});
+
+  final String title;
+  final Color buttonColor;
+  final VoidCallback onPressed;
+  final double height;
+  final double width;
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: height.h,
+      width: width.w,
+      child: ElevatedButton(
+          onPressed: onPressed,
+          style: ElevatedButton.styleFrom(
+              primary: buttonColor,
+              side: BorderSide(width: 1, color: AppColors.redColor),
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10))),
+          child: CustomText(
+              title: title,
+              fontSize: 14.sp,
+              fontWeight: FontWeight.bold,
+              txtColor: buttonColor == AppColors.redColor
+                  ? AppColors.whiteColor
+                  : AppColors.redColor)),
     );
   }
 }

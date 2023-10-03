@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/screens/index.dart';
+
+import 'G-3/Marketplace/order_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(
             fontFamily: GoogleFonts.sen().fontFamily,
           ),
-          home: SignupScreen(),
+          home: OrderPage(),
         );
       },
     );
