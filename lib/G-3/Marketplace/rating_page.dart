@@ -20,7 +20,7 @@ class RatingsPage extends StatelessWidget {
         leading: Padding(
           padding: const EdgeInsets.only(left: 12),
           child: CircleAvatar(
-            backgroundColor: AppColors.awashColor.withOpacity(0.9),
+            backgroundColor: AppColors.awashColor,
             radius: 25.r,
             child: IconButton(
                 onPressed: () {

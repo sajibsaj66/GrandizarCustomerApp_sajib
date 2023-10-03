@@ -89,3 +89,51 @@ List<OrderItem> orders = [
       quantity: 1,
       orderId: 240112),
 ];
+
+class Favourite {
+  String restaurantName;
+  String restaurantImg;
+  String itemName;
+  String itemImg;
+  num price;
+
+  Favourite(
+      {required this.itemName,
+      required this.itemImg,
+      required this.price,
+      required this.restaurantName,
+      required this.restaurantImg});
+}
+
+List<Favourite> favourites = [
+  Favourite(
+      itemName: 'Chicken Fry',
+      itemImg: AppImages.chickenFry,
+      price: 40,
+      restaurantName: 'Rose Garden Restaurant',
+      restaurantImg: AppImages.roseGardenRestaurant),
+  Favourite(
+      itemName: 'Baklava',
+      itemImg: AppImages.baklava,
+      price: 60,
+      restaurantName: 'Cafenio Restaurant',
+      restaurantImg: AppImages.roseGardenRestaurant2),
+  Favourite(
+      itemName: 'Matabbaq',
+      itemImg: AppImages.matabbaq,
+      price: 40,
+      restaurantName: 'Cafenio Restaurant',
+      restaurantImg: AppImages.roseGardenRestaurant),
+  Favourite(
+      itemName: 'Pizza',
+      itemImg: AppImages.pizza,
+      price: 74,
+      restaurantName: 'Kabab Restaurant',
+      restaurantImg: AppImages.roseGardenRestaurant2),
+  Favourite(
+      itemName: 'Burger Bistro',
+      itemImg: AppImages.burgerBistro,
+      price: 40,
+      restaurantName: 'Rose Garden Restaurant',
+      restaurantImg: AppImages.roseGardenRestaurant),
+];
