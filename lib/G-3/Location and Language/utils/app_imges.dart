@@ -11,6 +11,7 @@ class AppImages{
   static const String chickenFry = 'image/assets/G-3/task_image/chickenFry.png';
   static const String europeanBurger = 'image/assets/G-3/task_image/europeanBurger.png';
   static const String harriesSpecial = 'image/assets/G-3/task_image/harriesSpecial.png';
+  static const String grandizarLogo2 = 'image/assets/G-3/task_image/grandizarLogo.png';
   static const String matabbaq = 'image/assets/G-3/task_image/matabbaq.png';
   static const String mcdonald = 'image/assets/G-3/task_image/mcdonald.png';
   static const String pizza = 'image/assets/G-3/task_image/pizza.png';

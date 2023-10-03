@@ -33,6 +33,8 @@ class OrderItem {
   String status;
   String merchantName;
   String merchantImg;
+  String itemName;
+  String itemImg;
   num price;
   String time;
   int quantity;
@@ -43,6 +45,8 @@ class OrderItem {
     required this.status,
     required this.merchantName,
     required this.merchantImg,
+    required this.itemName,
+    required this.itemImg,
     required this.price,
     required this.time,
     required this.quantity,
@@ -56,6 +60,8 @@ List<OrderItem> orders = [
       status: 'Completed',
       merchantName: 'Subway',
       merchantImg: AppImages.subway,
+      itemName: 'Harries Special',
+      itemImg: AppImages.harriesSpecial,
       price: 35.25,
       time: '29 Jan, 12:30',
       quantity: 3,
@@ -65,6 +71,8 @@ List<OrderItem> orders = [
       status: 'Completed',
       merchantName: 'McDonald',
       merchantImg: AppImages.mcdonald,
+      itemName: 'Matabbaq',
+      itemImg: AppImages.matabbaq,
       price: 40.15,
       time: '30 Jan, 12:30',
       quantity: 2,
@@ -74,6 +82,8 @@ List<OrderItem> orders = [
       status: 'Canceled',
       merchantName: 'Starbucks',
       merchantImg: AppImages.starbucks,
+      itemName: 'European Burger',
+      itemImg: AppImages.europeanBurger,
       price: 10.20,
       time: '30 Jan, 12:30',
       quantity: 1,

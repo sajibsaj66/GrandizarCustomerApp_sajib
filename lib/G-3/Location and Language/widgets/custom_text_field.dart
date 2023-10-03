@@ -65,3 +65,45 @@ class CustomTextField extends StatelessWidget {
     );
   }
 }
+
+class CustomMultilineField extends StatelessWidget {
+  const CustomMultilineField(
+      {super.key,
+        required this.hintText,
+        this.borderRadius = 15,
+        this.suffixIcon});
+
+  final double borderRadius;
+  final String hintText;
+  final Icon? suffixIcon;
+
+  @override
+  Widget build(BuildContext context) {
+    final w = MediaQuery.of(context).size.width;
+    final h = MediaQuery.of(context).size.height;
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Container(
+        height: 130.h,
+        margin: EdgeInsets.only(right: w * 0.010),
+        padding: EdgeInsets.only(left: w * 0.04, right: w * 0.010),
+        decoration: BoxDecoration(
+            color: AppColors.awashColor,
+            borderRadius: BorderRadius.circular(borderRadius)),
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: TextField(
+            keyboardType: TextInputType.multiline,
+            minLines: 1,
+            maxLines: 10,
+            decoration: InputDecoration(
+                hintStyle: const TextStyle(fontSize: 14),
+                border: InputBorder.none,
+                hintText: hintText,
+                suffixIcon: suffixIcon),
+          ),
+        ),
+      ),
+    );
+  }
+}

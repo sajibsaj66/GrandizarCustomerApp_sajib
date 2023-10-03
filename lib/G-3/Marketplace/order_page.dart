@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:grandizar_customer_app_sajib/G-3/Marketplace/rating_page.dart';
 
 import '../Location and Language/index.dart';
 
@@ -47,11 +48,6 @@ class OrderPage extends StatelessWidget {
         ),
         body: TabBarView(
           children: [
-
-
-
-
-
             ListView.builder(
                 itemCount: orders.length,
                 itemBuilder: (context, index) {
@@ -61,7 +57,8 @@ class OrderPage extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        CustomText(title: orders[index].itemType, fontSize: 14.sp),
+                        CustomText(
+                            title: orders[index].itemType, fontSize: 14.sp),
                         const Divider(color: AppColors.disableColor),
                         SizedBox(height: 10.h),
                         Row(
@@ -72,7 +69,8 @@ class OrderPage extends StatelessWidget {
                                 CircleAvatar(
                                   radius: 30.r,
                                   backgroundColor: Colors.transparent,
-                                  backgroundImage: AssetImage(orders[index].merchantImg),
+                                  backgroundImage:
+                                      AssetImage(orders[index].merchantImg),
                                 ),
                                 SizedBox(width: 5.w),
                                 Column(
@@ -91,7 +89,8 @@ class OrderPage extends StatelessWidget {
                                               fontWeight: FontWeight.bold),
                                           const VerticalDivider(thickness: 2),
                                           CustomText(
-                                              title: '${orders[index].quantity} Items',
+                                              title:
+                                                  '${orders[index].quantity} Items',
                                               fontSize: 12.sp,
                                               txtColor: AppColors.disableColor),
                                         ],
@@ -124,22 +123,6 @@ class OrderPage extends StatelessWidget {
                     ),
                   );
                 }),
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             ListView.builder(
                 itemCount: orders.length,
                 itemBuilder: (context, index) {
@@ -151,12 +134,15 @@ class OrderPage extends StatelessWidget {
                       children: [
                         Row(
                           children: [
-                            CustomText(title: orders[index].itemType, fontSize: 14.sp),
+                            CustomText(
+                                title: orders[index].itemType, fontSize: 14.sp),
                             CustomText(
                                 title: orders[index].status,
                                 fontSize: 14.sp,
                                 fontWeight: FontWeight.bold,
-                                txtColor: orders[index].status == 'Completed' ? AppColors.greenColor : AppColors.redColor),
+                                txtColor: orders[index].status == 'Completed'
+                                    ? AppColors.greenColor
+                                    : AppColors.redColor),
                           ],
                         ),
                         const Divider(color: AppColors.disableColor),
@@ -169,7 +155,8 @@ class OrderPage extends StatelessWidget {
                                 CircleAvatar(
                                   radius: 30.r,
                                   backgroundColor: Colors.transparent,
-                                  backgroundImage: AssetImage(orders[index].merchantImg),
+                                  backgroundImage:
+                                      AssetImage(orders[index].merchantImg),
                                 ),
                                 SizedBox(width: 8.w),
                                 Column(
@@ -200,7 +187,8 @@ class OrderPage extends StatelessWidget {
                                                 AppColors.disableColor,
                                           ),
                                           CustomText(
-                                              title: '${orders[index].quantity} Items',
+                                              title:
+                                                  '${orders[index].quantity} Items',
                                               fontSize: 12.sp,
                                               padding: 4,
                                               txtColor: AppColors.disableColor),
@@ -223,10 +211,13 @@ class OrderPage extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             CustomButtonMedium(
-                                title: 'Rate', onPressed: () {}, buttonColor: AppColors.awashColor),
+                                title: 'Rate',
+                                onPressed: () {
+                                  Navigator.push(context, MaterialPageRoute(builder: (context) => RatingsPage(index: index)));
+                                },
+                                buttonColor: AppColors.awashColor),
                             CustomButtonMedium(
-                                title: 'Re-Order',
-                                onPressed: () {}),
+                                title: 'Re-Order', onPressed: () {}),
                           ],
                         ),
                       ],
