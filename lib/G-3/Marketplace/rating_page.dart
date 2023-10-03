@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:grandizar_customer_app_sajib/G-3/Location%20and%20Language/widgets/custom_text_field.dart';
+import 'package:grandizar_customer_app_sajib/G-3/Marketplace/favourite_page.dart';
 import 'package:grandizar_customer_app_sajib/G-3/Marketplace/order_page.dart';
 
 import '../Location and Language/index.dart';
@@ -111,7 +112,7 @@ class RatingsPage extends StatelessWidget {
                   title: 'Continue',
                   onPressed: () {
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => OrderPage()));
+                        MaterialPageRoute(builder: (context) => FavouritePage()));
                   })
             ],
           ),
