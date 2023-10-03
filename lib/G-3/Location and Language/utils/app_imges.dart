@@ -16,6 +16,7 @@ class AppImages{
   static const String mcdonald = 'image/assets/G-3/task_image/mcdonald.png';
   static const String pizza = 'image/assets/G-3/task_image/pizza.png';
   static const String roseGardenRestaurant = 'image/assets/G-3/task_image/roseGardenRestaurant.png';
+  static const String roseGardenRestaurant2 = 'image/assets/G-3/task_image/restaurant2.png';
   static const String starbucks = 'image/assets/G-3/task_image/starbucks.png';
   static const String subway = 'image/assets/G-3/task_image/subway.png';
 }
