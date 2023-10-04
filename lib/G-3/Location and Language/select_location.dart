@@ -67,7 +67,7 @@ class _SelectLocationPageState extends State<SelectLocationPage> {
                           setState(() {
                             search = true;
                           });
-                        }, icon: Icon(Icons.keyboard_arrow_up))),
+                        }, icon: const Icon(Icons.keyboard_arrow_up))),
                 SizedBox(height: 20.h),
                 !search
                     ? CustomButton(
@@ -75,7 +75,7 @@ class _SelectLocationPageState extends State<SelectLocationPage> {
                         onPressed: () {},
                         buttonColor: AppColors.redColor,
                       )
-                    : SizedBox()
+                    : const SizedBox()
               ],
             ),
           ),

@@ -58,7 +58,7 @@ class RatingsPage extends StatelessWidget {
                           title: orders[index].itemName, fontSize: 14.sp),
                     ],
                   ),
-                  Row(
+                  const Row(
                     children: [
                       Icon(Icons.star, color: AppColors.redColor),
                       Icon(Icons.star, color: AppColors.redColor),
@@ -77,7 +77,7 @@ class RatingsPage extends StatelessWidget {
                       text:
                           'Tell others about your experience with\nHarres Special ',
                       style: TextStyle(
-                        color: Color(0xFF181C2E),
+                        color: const Color(0xFF181C2E),
                         fontSize: 16.sp,
                         fontFamily: 'Sen',
                         fontWeight: FontWeight.w400,
@@ -87,7 +87,7 @@ class RatingsPage extends StatelessWidget {
                     TextSpan(
                       text: '(Optional)',
                       style: TextStyle(
-                        color: Color(0xFF9B9BA5),
+                        color: const Color(0xFF9B9BA5),
                         fontSize: 16.sp,
                         fontFamily: 'Sen',
                         fontWeight: FontWeight.w400,
@@ -98,10 +98,10 @@ class RatingsPage extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 20.h),
-              CustomMultilineField(
+              const CustomMultilineField(
                   hintText:
                       'Help them decide if they should order fromthis restaurant.'),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   CustomText(title: '0/200', fontSize: 12),
@@ -112,7 +112,7 @@ class RatingsPage extends StatelessWidget {
                   title: 'Continue',
                   onPressed: () {
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => FavouritePage()));
+                        MaterialPageRoute(builder: (context) => const FavouritePage()));
                   })
             ],
           ),

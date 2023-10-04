@@ -6,7 +6,6 @@ import 'package:grandizar_customer_app_sajib/G-3/Location%20and%20Language/widge
 import 'package:grandizar_customer_app_sajib/G-3/Location%20and%20Language/widgets/custom_text_field.dart';
 
 import '../../Location and Language/index.dart';
-import '../../Location and Language/utils/static_data.dart';
 import '../../Location and Language/widgets/text_style.dart';
 
 class VerificationScreen extends StatelessWidget {
@@ -18,7 +17,7 @@ class VerificationScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView(padding: EdgeInsets.all(16), children: [
+      body: ListView(padding: const EdgeInsets.all(16), children: [
         AppHeading(
             title: isEmail!
                 ? AppStaticData.verificationEmail
@@ -32,29 +31,29 @@ class VerificationScreen extends StatelessWidget {
           style: subTitleStyle,
         ),
         SizedBox(height: 20.h),
-        CustomTextField(
+        const CustomTextField(
           hintText: AppStaticData.verificationCode,
           title: "",
         ),
         SizedBox(height: 30.h),
         CustomButton(
             title: sendcodeForLogin!
-                ? AppStaticData.VerifyNow_SignIn
+                ? AppStaticData.verifyNowSignIn
                 : AppStaticData.verifyNow,
             onPressed: () {
               sendcodeForLogin!
                   ? Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => LoginScreen()))
+                      MaterialPageRoute(builder: (context) => const LoginScreen()))
                   : Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => NewPasswordSetScreen()));
+                          builder: (context) => const NewPasswordSetScreen()));
             }),
         SizedBox(height: 20.h),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text(AppStaticData.minLeft, style: subTitleStyle),
+            const Text(AppStaticData.minLeft, style: subTitleStyle),
             Text(
               AppStaticData.resend,
               style: subTitleStyle.copyWith(color: AppColors.redColor),

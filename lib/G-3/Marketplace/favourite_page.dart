@@ -37,7 +37,7 @@ class FavouritePage extends StatelessWidget {
             InkWell(
               onTap: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => CartPage()));
+                    MaterialPageRoute(builder: (context) => const CartPage()));
               },
               child: CircleAvatar(
                 backgroundColor: AppColors.awashColor,
@@ -181,7 +181,7 @@ class FavouritePage extends StatelessWidget {
                                 CircleAvatar(
                                   backgroundColor: AppColors.redColor,
                                   radius: 15.r,
-                                  child: Icon(Icons.add,
+                                  child: const Icon(Icons.add,
                                       color: AppColors.whiteColor),
                                 ),
                               ],

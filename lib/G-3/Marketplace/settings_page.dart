@@ -38,7 +38,7 @@ class SettingsPage extends StatelessWidget {
               color: AppColors.awashColor,
               borderRadius: BorderRadius.circular(16)
             ),
-            child: Row(
+            child: const Row(
               children: [
                 CircleAvatar(
 

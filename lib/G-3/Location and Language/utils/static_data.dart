@@ -22,12 +22,12 @@ class AppStaticData{
   static const password ='Password';
   static const forgotPassword ='Forgot password';
   static const loginwithmobilenumber ='Or log in with mobile number';
-  static const SendCodeforLogIn ='Send Code for Log In';
+  static const sendCodeForLogIn ='Send Code for Log In';
   static const newSignUp ='If you are new? Sign Up';
-  static const VerifyNow_SignIn ='Verify Now & Sign In';
-  static const Resetviaemailverification ='Reset via email verification';
+  static const verifyNowSignIn ='Verify Now & Sign In';
+  static const resetviaemailverification ='Reset via email verification';
   static const phoneNo ='Phone No';
-  static const Resetviaphoneverification ='Reset via phone verification';
+  static const resetviaphoneverification ='Reset via phone verification';
   static const resetPassword ='Reset password';
   static const sendCode ='Send Code';
   static const newPassword ='Create New Password';

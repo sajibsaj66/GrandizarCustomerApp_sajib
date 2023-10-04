@@ -8,10 +8,11 @@ import 'package:grandizar_customer_app_sajib/G-3/Location%20and%20Language/widge
 
 import '../../Location and Language/index.dart';
 import '../../Location and Language/utils/static_data.dart';
+import '../../Location and Language/widgets/custom_text_middle.dart';
 import '../../Location and Language/widgets/text_style.dart';
 
 class SignupScreen extends StatefulWidget {
-  SignupScreen({super.key});
+  const SignupScreen({super.key});
 
   @override
   State<SignupScreen> createState() => _SignupScreenState();
@@ -27,26 +28,26 @@ class _SignupScreenState extends State<SignupScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView(
-        padding: EdgeInsets.all(16),
+        padding: const EdgeInsets.all(16),
         children: [
-          AppHeading(title: AppStaticData.reg),
+          const AppHeading(title: AppStaticData.reg),
           SizedBox(height: 30.h),
-          CustomTextField(
+          const CustomTextField(
               hintText: AppStaticData.firstName,
               prefixIcon: Icons.person,
               title: AppStaticData.firstNameUpper),
           SizedBox(height: 10.h),
-          CustomTextField(
+          const CustomTextField(
               hintText: AppStaticData.lastName,
               prefixIcon: Icons.person,
               title: AppStaticData.lastNameUpper),
           SizedBox(height: 10.h),
-          CustomTextField(
+          const CustomTextField(
               hintText: AppStaticData.emailAddress,
               prefixIcon: Icons.email,
               title: AppStaticData.email),
           SizedBox(height: 10.h),
-          CustomTextField(
+          const CustomTextField(
               isCountryPicker: true,
               hintText: AppStaticData.phoneNumber,
               prefixIcon: Icons.lock,
@@ -59,7 +60,7 @@ class _SignupScreenState extends State<SignupScreen> {
                     context,
                     MaterialPageRoute(
                         builder: (context) =>
-                            VerificationScreen(sendcodeForLogin: true)));
+                            const VerificationScreen(sendcodeForLogin: true)));
               }),
           SizedBox(height: 10.h),
           CheckboxListTile(
@@ -83,7 +84,7 @@ class _SignupScreenState extends State<SignupScreen> {
             contentPadding: EdgeInsets.zero,
           ),
           SizedBox(height: 10.h),
-          TextInTheMiddle(text: AppStaticData.loginWith),
+          const TextInTheMiddle(text: AppStaticData.loginWith),
           SizedBox(height: 20.h),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -112,7 +113,7 @@ class _SignupScreenState extends State<SignupScreen> {
               TextButton(
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => LoginScreen()));
+                      MaterialPageRoute(builder: (context) => const LoginScreen()));
                 },
                 child: Text(
                   AppStaticData.logIn,
@@ -130,39 +131,4 @@ class _SignupScreenState extends State<SignupScreen> {
   }
 }
 
-class TextInTheMiddle extends StatelessWidget {
-  final String text;
-  const TextInTheMiddle({
-    super.key,
-    required this.text,
-  });
 
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Expanded(
-          child: Container(
-            height: 1.5,
-            color: const Color(0xFFC4C4C4),
-          ),
-        ),
-        SizedBox(height: 10.h),
-        Text(
-          text,
-          style: titleStyle.copyWith(
-            fontSize: 15,
-          ),
-        ),
-        SizedBox(height: 10.h),
-        Expanded(
-          child: Container(
-            height: 1.5,
-            color: const Color(0xFFC4C4C4),
-          ),
-        ),
-      ],
-    );
-  }
-}

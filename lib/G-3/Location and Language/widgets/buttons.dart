@@ -67,7 +67,7 @@ class CustomButtonMedium extends StatelessWidget {
           onPressed: onPressed,
           style: ElevatedButton.styleFrom(
               primary: buttonColor,
-              side: BorderSide(width: 1, color: AppColors.redColor),
+              side: const BorderSide(width: 1, color: AppColors.redColor),
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10))),
           child: CustomText(

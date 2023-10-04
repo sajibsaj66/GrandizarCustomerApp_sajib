@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:grandizar_customer_app_sajib/G-3/Location%20and%20Language/location_access_page.dart';
 import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/screens/reset_pass.dart';
 import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/screens/sign_up_screen.dart';
 import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/screens/verification_screen.dart';
@@ -8,10 +7,11 @@ import 'package:grandizar_customer_app_sajib/G-3/Location%20and%20Language/widge
 import 'package:grandizar_customer_app_sajib/G-3/Location%20and%20Language/widgets/custom_text_field.dart';
 
 import '../../Location and Language/index.dart';
+import '../../Location and Language/widgets/custom_text_middle.dart';
 import '../../Location and Language/widgets/text_style.dart';
 
 class LoginScreen extends StatefulWidget {
-  LoginScreen({super.key});
+  const LoginScreen({super.key});
 
   @override
   State<LoginScreen> createState() => _LoginScreenState();
@@ -28,10 +28,10 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: ListView(padding: EdgeInsets.all(16), children: [
-      AppHeading(title: AppStaticData.logIn),
+        body: ListView(padding: const EdgeInsets.all(16), children: [
+      const AppHeading(title: AppStaticData.logIn),
       SizedBox(height: 10.h),
-      CustomTextField(
+      const CustomTextField(
         hintText: AppStaticData.emailAddress,
         prefixIcon: Icons.email,
         title: AppStaticData.email,
@@ -66,7 +66,7 @@ class _LoginScreenState extends State<LoginScreen> {
             builder: (BuildContext context) {
               return Container(
                 height: 260.h,
-                padding: EdgeInsets.all(12),
+                padding: const EdgeInsets.all(12),
                 decoration: const BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
@@ -79,7 +79,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    Text(AppStaticData.resetPassword, style: titleStyle),
+                    const Text(AppStaticData.resetPassword, style: titleStyle),
                     SizedBox(height: 10.h),
                     Container(
                       decoration: BoxDecoration(
@@ -92,16 +92,16 @@ class _LoginScreenState extends State<LoginScreen> {
                               context,
                               MaterialPageRoute(
                                   builder: (context) =>
-                                      ResetPwdWithEmailPhone(isEmail: true)));
+                                      const ResetPwdWithEmailPhone(isEmail: true)));
                         },
                         leading: const Icon(
                           Icons.email,
                         ),
-                        title: Text(
+                        title: const Text(
                           AppStaticData.email,
                           style: subTitleStyle,
                         ),
-                        subtitle: Text(AppStaticData.Resetviaemailverification,
+                        subtitle: const Text(AppStaticData.resetviaemailverification,
                             style: subTitleStyle),
                       ),
                     ),
@@ -117,16 +117,16 @@ class _LoginScreenState extends State<LoginScreen> {
                               context,
                               MaterialPageRoute(
                                   builder: (context) =>
-                                      ResetPwdWithEmailPhone()));
+                                      const ResetPwdWithEmailPhone()));
                         },
                         leading: const Icon(
                           Icons.phone,
                         ),
-                        title: Text(
+                        title: const Text(
                           AppStaticData.phoneNo,
                           style: subTitleStyle,
                         ),
-                        subtitle: Text(AppStaticData.Resetviaphoneverification,
+                        subtitle: const Text(AppStaticData.resetviaphoneverification,
                             style: subTitleStyle),
                       ),
                     ),
@@ -147,12 +147,12 @@ class _LoginScreenState extends State<LoginScreen> {
           title: AppStaticData.logIn,
           onPressed: () {
             Navigator.push(context,
-                MaterialPageRoute(builder: (context) => LocationAccessPage()));
+                MaterialPageRoute(builder: (context) => const LocationAccessPage()));
           }),
       SizedBox(height: 20.h),
-      TextInTheMiddle(text: AppStaticData.loginwithmobilenumber),
+      const TextInTheMiddle(text: AppStaticData.loginwithmobilenumber),
       SizedBox(height: 10.h),
-      CustomTextField(
+      const CustomTextField(
         isCountryPicker: true,
         hintText: AppStaticData.phoneNumber,
         prefixIcon: Icons.lock,
@@ -160,13 +160,13 @@ class _LoginScreenState extends State<LoginScreen> {
       ),
       SizedBox(height: 20.h),
       CustomButton(
-          title: AppStaticData.SendCodeforLogIn,
+          title: AppStaticData.sendCodeForLogIn,
           onPressed: () {
             Navigator.push(
                 context,
                 MaterialPageRoute(
                     builder: (context) =>
-                        VerificationScreen(sendcodeForLogin: true)));
+                        const VerificationScreen(sendcodeForLogin: true)));
           }),
       SizedBox(height: 20.h),
       Row(
@@ -181,7 +181,7 @@ class _LoginScreenState extends State<LoginScreen> {
           TextButton(
             onPressed: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => SignupScreen()));
+                  MaterialPageRoute(builder: (context) => const SignupScreen()));
             },
             child: Text(
               AppStaticData.signUp,

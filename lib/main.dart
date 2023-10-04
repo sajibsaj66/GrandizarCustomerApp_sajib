@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(
             fontFamily: GoogleFonts.sen().fontFamily,
           ),
-          home: OrderPage(),
+          home: const OrderPage(),
         );
       },
     );

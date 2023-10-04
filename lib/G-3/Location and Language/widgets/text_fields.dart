@@ -39,7 +39,7 @@ class CustomBoxField extends StatelessWidget {
                 contentPadding: const EdgeInsets.all(16),
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),
-                  borderSide: BorderSide(width: 1, color: Colors.yellow)
+                  borderSide: const BorderSide(width: 1, color: Colors.yellow)
                 ),
                 hintStyle: TextStyle(fontSize: 14.sp),
                 hintText: hintText,

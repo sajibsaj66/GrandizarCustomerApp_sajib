@@ -8,7 +8,7 @@ import '../../Location and Language/index.dart';
 import '../../Location and Language/widgets/text_style.dart';
 
 class NewPasswordSetScreen extends StatefulWidget {
-  NewPasswordSetScreen({super.key});
+  const NewPasswordSetScreen({super.key});
 
   @override
   State<NewPasswordSetScreen> createState() => _NewPasswordSetScreenState();
@@ -25,10 +25,10 @@ class _NewPasswordSetScreenState extends State<NewPasswordSetScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView(padding: EdgeInsets.all(16), children: [
-        AppHeading(title: AppStaticData.newPassword),
+      body: ListView(padding: const EdgeInsets.all(16), children: [
+        const AppHeading(title: AppStaticData.newPassword),
         SizedBox(height: 20.h),
-        Text(
+        const Text(
           textAlign: TextAlign.center,
           AppStaticData.differentFrom,
           style: subTitleStyle,
@@ -56,7 +56,7 @@ class _NewPasswordSetScreenState extends State<NewPasswordSetScreen> {
             title: AppStaticData.resetPassword,
             onPressed: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => PasswordChanged()));
+                  MaterialPageRoute(builder: (context) => const PasswordChanged()));
             }),
       ]),
     );

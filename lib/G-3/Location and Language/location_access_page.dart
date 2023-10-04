@@ -4,7 +4,7 @@ import 'index.dart';
 import 'package:location/location.dart';
 
 class LocationAccessPage extends StatelessWidget {
-  LocationAccessPage({super.key});
+  const LocationAccessPage({super.key});
 
   Future requestPermission() async {
     Location location = Location();
@@ -54,7 +54,7 @@ class LocationAccessPage extends StatelessWidget {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => const HubsPage()));
+                          builder: (context) =>  const HubsPage()));
                 }),
             SizedBox(height: 20.h),
             InkWell(
@@ -62,7 +62,7 @@ class LocationAccessPage extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => SelectLocationPage()));
+                        builder: (context) => const SelectLocationPage()));
               },
               child: CustomText(
                   title: 'Enter location manually',
