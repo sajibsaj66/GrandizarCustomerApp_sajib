@@ -59,7 +59,7 @@ class _SelectLocationPageState extends State<SelectLocationPage> {
                           ),
                         ],
                       )
-                    : SizedBox(),
+                    : const SizedBox(),
                 CustomBoxField(
                     hintText: 'Search by city or city center name',
                     suffixIcon: IconButton(
