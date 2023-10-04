@@ -50,7 +50,7 @@ class _SettingsPageState extends State<SettingsPage> {
               },
               child: Container(
                 width: 340.w,
-                height: 101.h,
+                height: 105.h,
                 padding: const EdgeInsets.all(8),
                 margin: const EdgeInsets.all(8),
                 decoration: BoxDecoration(
@@ -64,7 +64,7 @@ class _SettingsPageState extends State<SettingsPage> {
                       backgroundColor: AppColors.whiteColor,
                       child: Image.asset(AppImages.lock, scale: 3),
                     ),
-                    CustomText(title: 'Change Password', fontSize: 18.sp),
+                    CustomText(title: 'Change Password', fontSize: 16.sp),
                     Image.asset(AppImages.edit, scale: 0.9)
                   ],
                 ),
@@ -80,7 +80,7 @@ class _SettingsPageState extends State<SettingsPage> {
               },
               child: Container(
                 width: 340.w,
-                height: 101.h,
+                height: 110.h,
                 padding: const EdgeInsets.all(8),
                 margin: const EdgeInsets.all(8),
                 decoration: BoxDecoration(
@@ -96,7 +96,8 @@ class _SettingsPageState extends State<SettingsPage> {
                     ),
                     Column(
                       children: [
-                        CustomText(title: 'Language', fontSize: 18.sp),
+                        CustomText(
+                            title: 'Language', fontSize: 16.sp, padding: 4),
                         CustomText(
                             title: initLan,
                             fontSize: 14.sp,

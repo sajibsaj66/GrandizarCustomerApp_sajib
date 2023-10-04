@@ -1,4 +1,4 @@
-#Mon Oct 02 12:05:49 BDT 2023
+#Wed Oct 04 10:14:55 BDT 2023
 base.0=D\:\\Sizan\\Desh IT\\GrandizarCustomerApp_sajib\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

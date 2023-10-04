@@ -13,7 +13,6 @@ class PasswordModificationPage extends StatefulWidget {
 }
 
 class _PasswordModificationState extends State<PasswordModificationPage> {
-
   bool isOldPasswordVisible = true;
   bool isNewPasswordVisible = true;
   bool isConfirmPasswordVisible = true;
@@ -24,6 +23,7 @@ class _PasswordModificationState extends State<PasswordModificationPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: true,
       appBar: AppBar(
           toolbarHeight: 90.h,
           backgroundColor: AppColors.whiteColor,
@@ -45,81 +45,86 @@ class _PasswordModificationState extends State<PasswordModificationPage> {
               title: 'Change Password',
               fontSize: 18.spMax,
               fontWeight: FontWeight.bold)),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          children: [
-            Image.asset(AppImages.grandizarLogo2),
-            SizedBox(height: 30.h),
-            CustomTextField(
-              hintText: '',
-              prefixIcon: Icons.lock,
-              title: 'OLD PASSWORD',
-              obscureText: oldObscureText,
-              suffixWidget: InkWell(
-                onTap: () {
-                  setState(() {
-                    isOldPasswordVisible = !isOldPasswordVisible;
-                    oldObscureText = !oldObscureText;
-                  });
-                },
-                child: Icon(
-                  isOldPasswordVisible ? Icons.visibility_off : Icons.visibility,
-                  color: AppColors.secondaryBlackColor,
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            children: [
+              Image.asset(AppImages.grandizarLogo2),
+              SizedBox(height: 30.h),
+              CustomTextField(
+                hintText: '',
+                prefixIcon: Icons.lock,
+                title: 'OLD PASSWORD',
+                obscureText: oldObscureText,
+                suffixWidget: InkWell(
+                  onTap: () {
+                    setState(() {
+                      isOldPasswordVisible = !isOldPasswordVisible;
+                      oldObscureText = !oldObscureText;
+                    });
+                  },
+                  child: Icon(
+                    isOldPasswordVisible
+                        ? Icons.visibility_off
+                        : Icons.visibility,
+                    color: AppColors.secondaryBlackColor,
+                  ),
                 ),
               ),
-            ),
-            SizedBox(height: 30.h),
-
-
-
-            CustomTextField(
-              hintText: '',
-              prefixIcon: Icons.lock,
-              title: 'NEW PASSWORD',
-              obscureText: newObscureText,
-              suffixWidget: InkWell(
-                onTap: () {
-                  setState(() {
-                    isNewPasswordVisible = !isNewPasswordVisible;
-                    newObscureText = !newObscureText;
-                  });
-                },
-                child: Icon(
-                  isNewPasswordVisible ? Icons.visibility_off : Icons.visibility,
-                  color: AppColors.secondaryBlackColor,
+              SizedBox(height: 30.h),
+              CustomTextField(
+                hintText: '',
+                prefixIcon: Icons.lock,
+                title: 'NEW PASSWORD',
+                obscureText: newObscureText,
+                suffixWidget: InkWell(
+                  onTap: () {
+                    setState(() {
+                      isNewPasswordVisible = !isNewPasswordVisible;
+                      newObscureText = !newObscureText;
+                    });
+                  },
+                  child: Icon(
+                    isNewPasswordVisible
+                        ? Icons.visibility_off
+                        : Icons.visibility,
+                    color: AppColors.secondaryBlackColor,
+                  ),
                 ),
               ),
-            ),
-            SizedBox(height: 30.h),
-
-
-
-
-
-            CustomTextField(
-              hintText: '',
-              prefixIcon: Icons.lock,
-              title: 'CONFIRM PASSWORD',
-              obscureText: confirmObscureText,
-              suffixWidget: InkWell(
-                onTap: () {
-                  setState(() {
-                    isConfirmPasswordVisible = !isConfirmPasswordVisible;
-                    confirmObscureText = !confirmObscureText;
-                  });
-                },
-                child: Icon(
-                  isConfirmPasswordVisible ? Icons.visibility_off : Icons.visibility,
-                  color: AppColors.secondaryBlackColor,
+              SizedBox(height: 30.h),
+              CustomTextField(
+                hintText: '',
+                prefixIcon: Icons.lock,
+                title: 'CONFIRM PASSWORD',
+                obscureText: confirmObscureText,
+                suffixWidget: InkWell(
+                  onTap: () {
+                    setState(() {
+                      isConfirmPasswordVisible = !isConfirmPasswordVisible;
+                      confirmObscureText = !confirmObscureText;
+                    });
+                  },
+                  child: Icon(
+                    isConfirmPasswordVisible
+                        ? Icons.visibility_off
+                        : Icons.visibility,
+                    color: AppColors.secondaryBlackColor,
+                  ),
                 ),
               ),
-            ),
-            SizedBox(height: 30.h),
-            CustomButton(title: 'Continue', onPressed: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) => SettingsPage()));
-            })
-          ],
+              SizedBox(height: 30.h),
+              CustomButton(
+                  title: 'Continue',
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => SettingsPage()));
+                  })
+            ],
+          ),
         ),
       ),
     );

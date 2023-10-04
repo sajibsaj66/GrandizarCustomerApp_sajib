@@ -130,7 +130,6 @@
 # The proguard configuration file for the following section is D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\app\intermediates\aapt_proguard_file\release\aapt_rules.txt
 -keep class android.app.Application { <init>(); }
 -keep class androidx.core.app.CoreComponentFactory { <init>(); }
--keep class com.baseflow.geolocator.GeolocatorLocationService { <init>(); }
 -keep class com.example.grandizar_customer_app_sajib.MainActivity { <init>(); }
 -keep class com.google.android.gms.common.api.GoogleApiActivity { <init>(); }
 -keep class com.lyokone.location.FlutterLocationService { <init>(); }

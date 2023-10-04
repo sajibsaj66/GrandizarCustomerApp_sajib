@@ -17,19 +17,6 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\android@@:geolocator_android::release"
-      jars="D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\geolocator_android\.transforms\c66ea532796d6b8e372b8f1b6813635c\transformed\out\jars\classes.jar;D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\geolocator_android\.transforms\c66ea532796d6b8e372b8f1b6813635c\transformed\out\jars\libs\R.jar"
-      resolved="com.baseflow.geolocator:geolocator_android:unspecified"
-      folder="D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\geolocator_android\.transforms\c66ea532796d6b8e372b8f1b6813635c\transformed\out"
-      manifest="AndroidManifest.xml"
-      resFolder="res"
-      assetsFolder="assets"
-      lintJar="lint.jar"
-      publicResources="public.txt"
-      symbolFile="R.txt"
-      externalAnnotations="annotations.zip"
-      proguardRules="proguard.txt"/>
-  <library
       name="D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\android@@:path_provider_android::release"
       jars="D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\path_provider_android\.transforms\cf4614ffa5665d5734e9fe5d76ef8fe7\transformed\out\jars\classes.jar;D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\path_provider_android\.transforms\cf4614ffa5665d5734e9fe5d76ef8fe7\transformed\out\jars\libs\R.jar"
       resolved="io.flutter.plugins.pathprovider:path_provider_android:unspecified"

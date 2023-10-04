@@ -1,8 +1,6 @@
 -- Merging decision tree log ---
 application
 INJECTED from D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\android\app\src\main\AndroidManifest.xml:9:5-42:19
-MERGED from [:geolocator_android] D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-15:19
-MERGED from [:geolocator_android] D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-15:19
 MERGED from [:location] D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\location\intermediates\merged_manifest\release\AndroidManifest.xml:12:5-18:19
 MERGED from [:location] D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\location\intermediates\merged_manifest\release\AndroidManifest.xml:12:5-18:19
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\ssk12\.gradle\caches\transforms-3\1ba8d05a0965080943586c494e0aa4b2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
@@ -37,7 +35,6 @@ INJECTED from D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\android\app\src\main\A
 INJECTED from D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\android\app\src\main\AndroidManifest.xml:1:1-43:12
 MERGED from [:google_maps_flutter_android] D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\google_maps_flutter_android\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-9:12
 MERGED from [:flutter_plugin_android_lifecycle] D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\flutter_plugin_android_lifecycle\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-9:12
-MERGED from [:geolocator_android] D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-17:12
 MERGED from [:path_provider_android] D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\path_provider_android\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-9:12
 MERGED from [:location] D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\location\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-20:12
 MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\ssk12\.gradle\caches\transforms-3\c132967ebfb7143f82aaee5ad8c6043e\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:17:1-23:12
@@ -101,8 +98,6 @@ MERGED from [:google_maps_flutter_android] D:\Sizan\Desh IT\GrandizarCustomerApp
 MERGED from [:google_maps_flutter_android] D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\google_maps_flutter_android\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
 MERGED from [:flutter_plugin_android_lifecycle] D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\flutter_plugin_android_lifecycle\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
 MERGED from [:flutter_plugin_android_lifecycle] D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\flutter_plugin_android_lifecycle\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:geolocator_android] D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:geolocator_android] D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
 MERGED from [:path_provider_android] D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\path_provider_android\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
 MERGED from [:path_provider_android] D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\path_provider_android\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
 MERGED from [:location] D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\location\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
@@ -209,16 +204,6 @@ ADDED from D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\android\app\src\main\Andr
 		ADDED from D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\android\app\src\main\AndroidManifest.xml:41:13-68
 	android:name
 		ADDED from D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\android\app\src\main\AndroidManifest.xml:40:13-58
-service#com.baseflow.geolocator.GeolocatorLocationService
-ADDED from [:geolocator_android] D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-14:56
-	android:enabled
-		ADDED from [:geolocator_android] D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-35
-	android:exported
-		ADDED from [:geolocator_android] D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-37
-	android:foregroundServiceType
-		ADDED from [:geolocator_android] D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-53
-	android:name
-		ADDED from [:geolocator_android] D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-77
 service#com.lyokone.location.FlutterLocationService
 ADDED from [:location] D:\Sizan\Desh IT\GrandizarCustomerApp_sajib\build\location\intermediates\merged_manifest\release\AndroidManifest.xml:13:9-17:56
 	android:enabled

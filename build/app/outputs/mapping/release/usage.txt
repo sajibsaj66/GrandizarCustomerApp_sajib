@@ -486,6 +486,7 @@ androidx.core.app.NotificationCompat$Builder:
     public androidx.core.app.NotificationCompat$Builder setLocusId(androidx.core.content.LocusIdCompat)
     public androidx.core.app.NotificationCompat$Builder setNotificationSilent()
     public androidx.core.app.NotificationCompat$Builder setNumber(int)
+    public androidx.core.app.NotificationCompat$Builder setOngoing(boolean)
     public androidx.core.app.NotificationCompat$Builder setOnlyAlertOnce(boolean)
     public androidx.core.app.NotificationCompat$Builder setProgress(int,int,boolean)
     public androidx.core.app.NotificationCompat$Builder setPublicVersion(android.app.Notification)
@@ -1260,67 +1261,26 @@ androidx.core.location.LocationCompat$Api18Impl
 androidx.core.location.LocationCompat$Api26Impl
 androidx.core.location.LocationCompat
 androidx.core.location.LocationKt
-androidx.core.location.LocationManagerCompat$Api19Impl:
-    private void <init>()
+androidx.core.location.LocationListenerCompat
+androidx.core.location.LocationManagerCompat$Api19Impl
 androidx.core.location.LocationManagerCompat$Api24Impl
 androidx.core.location.LocationManagerCompat$Api28Impl
 androidx.core.location.LocationManagerCompat$Api30Impl
-androidx.core.location.LocationManagerCompat$Api31Impl:
-    private void <init>()
+androidx.core.location.LocationManagerCompat$Api31Impl
 androidx.core.location.LocationManagerCompat$CancellableLocationListener
 androidx.core.location.LocationManagerCompat$GnssListenersHolder
 androidx.core.location.LocationManagerCompat$GnssStatusTransport
 androidx.core.location.LocationManagerCompat$GpsStatusTransport
 androidx.core.location.LocationManagerCompat$InlineHandlerExecutor
-androidx.core.location.LocationManagerCompat$LocationListenerKey:
-    void <init>(java.lang.String,androidx.core.location.LocationListenerCompat)
-androidx.core.location.LocationManagerCompat$LocationListenerTransport:
-    void <init>(androidx.core.location.LocationManagerCompat$LocationListenerKey,java.util.concurrent.Executor)
+androidx.core.location.LocationManagerCompat$LocationListenerKey
+androidx.core.location.LocationManagerCompat$LocationListenerTransport
 androidx.core.location.LocationManagerCompat$PreRGnssStatusTransport
-androidx.core.location.LocationManagerCompat:
-    private static final long GET_CURRENT_LOCATION_TIMEOUT_MS
-    private static final long MAX_CURRENT_LOCATION_AGE_MS
-    private static final long PRE_N_LOOPER_TIMEOUT_S
-    private static java.lang.reflect.Field sContextField
-    private static java.lang.reflect.Method sGnssRequestBuilderBuildMethod
-    private static java.lang.Class sGnssRequestBuilderClass
-    private static java.lang.reflect.Method sRegisterGnssMeasurementsCallbackMethod
-    private void <init>()
-    public static void getCurrentLocation(android.location.LocationManager,java.lang.String,androidx.core.os.CancellationSignal,java.util.concurrent.Executor,androidx.core.util.Consumer)
-    public static java.lang.String getGnssHardwareModelName(android.location.LocationManager)
-    public static int getGnssYearOfHardware(android.location.LocationManager)
-    public static boolean hasProvider(android.location.LocationManager,java.lang.String)
-    public static boolean isLocationEnabled(android.location.LocationManager)
-    private static synthetic void lambda$getCurrentLocation$0(androidx.core.util.Consumer,android.location.Location)
-    private static synthetic java.lang.Boolean lambda$registerGnssStatusCallback$1(android.location.LocationManager,androidx.core.location.LocationManagerCompat$GpsStatusTransport)
-    public static boolean registerGnssMeasurementsCallback(android.location.LocationManager,android.location.GnssMeasurementsEvent$Callback,android.os.Handler)
-    public static boolean registerGnssMeasurementsCallback(android.location.LocationManager,java.util.concurrent.Executor,android.location.GnssMeasurementsEvent$Callback)
-    private static boolean registerGnssMeasurementsCallbackOnR(android.location.LocationManager,java.util.concurrent.Executor,android.location.GnssMeasurementsEvent$Callback)
-    private static boolean registerGnssStatusCallback(android.location.LocationManager,android.os.Handler,java.util.concurrent.Executor,androidx.core.location.GnssStatusCompat$Callback)
-    public static boolean registerGnssStatusCallback(android.location.LocationManager,androidx.core.location.GnssStatusCompat$Callback,android.os.Handler)
-    public static boolean registerGnssStatusCallback(android.location.LocationManager,java.util.concurrent.Executor,androidx.core.location.GnssStatusCompat$Callback)
-    public static void removeUpdates(android.location.LocationManager,androidx.core.location.LocationListenerCompat)
-    public static void requestLocationUpdates(android.location.LocationManager,java.lang.String,androidx.core.location.LocationRequestCompat,java.util.concurrent.Executor,androidx.core.location.LocationListenerCompat)
-    public static void unregisterGnssMeasurementsCallback(android.location.LocationManager,android.location.GnssMeasurementsEvent$Callback)
-    public static void unregisterGnssStatusCallback(android.location.LocationManager,androidx.core.location.GnssStatusCompat$Callback)
-androidx.core.location.LocationRequestCompat$Api19Impl:
-    private void <init>()
-androidx.core.location.LocationRequestCompat$Api31Impl:
-    private void <init>()
-androidx.core.location.LocationRequestCompat$Builder:
-    public void <init>(androidx.core.location.LocationRequestCompat)
-    public androidx.core.location.LocationRequestCompat$Builder clearMinUpdateIntervalMillis()
-    public androidx.core.location.LocationRequestCompat$Builder setDurationMillis(long)
-    public androidx.core.location.LocationRequestCompat$Builder setMaxUpdateDelayMillis(long)
-    public androidx.core.location.LocationRequestCompat$Builder setMaxUpdates(int)
-    public androidx.core.location.LocationRequestCompat$Builder setMinUpdateIntervalMillis(long)
+androidx.core.location.LocationManagerCompat
+androidx.core.location.LocationRequestCompat$Api19Impl
+androidx.core.location.LocationRequestCompat$Api31Impl
+androidx.core.location.LocationRequestCompat$Builder
 androidx.core.location.LocationRequestCompat$Quality
-androidx.core.location.LocationRequestCompat:
-    private static final long IMPLICIT_MIN_UPDATE_INTERVAL
-    public static final long PASSIVE_INTERVAL
-    public static final int QUALITY_BALANCED_POWER_ACCURACY
-    public static final int QUALITY_HIGH_ACCURACY
-    public static final int QUALITY_LOW_POWER
+androidx.core.location.LocationRequestCompat
 androidx.core.math.MathUtils
 androidx.core.net.ConnectivityManagerCompat$Api16Impl
 androidx.core.net.ConnectivityManagerCompat$Api24Impl
@@ -1567,13 +1527,17 @@ androidx.core.util.Preconditions:
     private void <init>()
     public static void checkArgument(boolean)
     public static void checkArgument(boolean,java.lang.Object)
+    public static varargs void checkArgument(boolean,java.lang.String,java.lang.Object[])
     public static float checkArgumentFinite(float,java.lang.String)
     public static double checkArgumentInRange(double,double,double,java.lang.String)
+    public static float checkArgumentInRange(float,float,float,java.lang.String)
     public static int checkArgumentInRange(int,int,int,java.lang.String)
+    public static long checkArgumentInRange(long,long,long,java.lang.String)
     public static int checkArgumentNonnegative(int)
     public static int checkArgumentNonnegative(int,java.lang.String)
     public static int checkFlagsArgument(int,int)
     public static void checkState(boolean)
+    public static void checkState(boolean,java.lang.String)
     public static java.lang.CharSequence checkStringNotEmpty(java.lang.CharSequence)
     public static java.lang.CharSequence checkStringNotEmpty(java.lang.CharSequence,java.lang.Object)
     public static varargs java.lang.CharSequence checkStringNotEmpty(java.lang.CharSequence,java.lang.String,java.lang.Object[])
@@ -1597,15 +1561,7 @@ androidx.core.util.SparseLongArrayKt$keyIterator$1
 androidx.core.util.SparseLongArrayKt$valueIterator$1
 androidx.core.util.SparseLongArrayKt
 androidx.core.util.Supplier
-androidx.core.util.TimeUtils:
-    public static final int HUNDRED_DAY_FIELD_LEN
-    private static final int SECONDS_PER_DAY
-    private static final int SECONDS_PER_HOUR
-    private static final int SECONDS_PER_MINUTE
-    private void <init>()
-    public static void formatDuration(long,long,java.io.PrintWriter)
-    public static void formatDuration(long,java.io.PrintWriter)
-    public static void formatDuration(long,java.io.PrintWriter,int)
+androidx.core.util.TimeUtils
 androidx.core.view.AccessibilityDelegateCompat$AccessibilityDelegateAdapter
 androidx.core.view.AccessibilityDelegateCompat$Api16Impl
 androidx.core.view.AccessibilityDelegateCompat
@@ -2960,46 +2916,6 @@ androidx.viewpager.widget.ViewPager$SavedState
 androidx.viewpager.widget.ViewPager$SimpleOnPageChangeListener
 androidx.viewpager.widget.ViewPager$ViewPositionComparator
 androidx.viewpager.widget.ViewPager
-com.baseflow.geolocator.BuildConfig
-com.baseflow.geolocator.GeolocatorLocationService:
-    private static final java.lang.String CHANNEL_ID
-    private static final int ONGOING_NOTIFICATION_ID
-    private static final java.lang.String TAG
-com.baseflow.geolocator.GeolocatorPlugin:
-    private static final java.lang.String TAG
-    public static void registerWith(io.flutter.plugin.common.PluginRegistry$Registrar)
-com.baseflow.geolocator.LocationServiceHandlerImpl:
-    private static final java.lang.String TAG
-com.baseflow.geolocator.MethodCallHandlerImpl:
-    private static final java.lang.String TAG
-com.baseflow.geolocator.R$attr
-com.baseflow.geolocator.R$color
-com.baseflow.geolocator.R$dimen
-com.baseflow.geolocator.R$drawable
-com.baseflow.geolocator.R$id
-com.baseflow.geolocator.R$integer
-com.baseflow.geolocator.R$layout
-com.baseflow.geolocator.R$string
-com.baseflow.geolocator.R$style
-com.baseflow.geolocator.R$styleable
-com.baseflow.geolocator.R
-com.baseflow.geolocator.StreamHandlerImpl:
-    private static final java.lang.String TAG
-com.baseflow.geolocator.location.FusedLocationClient:
-    private static final java.lang.String TAG
-com.baseflow.geolocator.location.LocationManagerClient:
-    private static final long TWO_MINUTES
-com.baseflow.geolocator.location.LocationMapper:
-    public void <init>()
-com.baseflow.geolocator.location.NmeaClient:
-    public static final java.lang.String NMEA_ALTITUDE_EXTRA
-com.baseflow.geolocator.location.NotificationImportance
-com.baseflow.geolocator.permission.PermissionManager:
-    private static final int PERMISSION_REQUEST_CODE
-com.baseflow.geolocator.permission.PermissionUtils:
-    public void <init>()
-com.baseflow.geolocator.utils.Utils:
-    public void <init>()
 com.example.grandizar_customer_app_sajib.BuildConfig
 com.example.grandizar_customer_app_sajib.R$attr
 com.example.grandizar_customer_app_sajib.R$color
@@ -3332,6 +3248,7 @@ com.google.android.gms.common.api.ResolvableApiException:
 com.google.android.gms.common.api.ResolvingResultCallbacks
 com.google.android.gms.common.api.Response:
     public void <init>()
+    protected com.google.android.gms.common.api.Result getResult()
     public void setResult(com.google.android.gms.common.api.Result)
 com.google.android.gms.common.api.ResultCallbacks
 com.google.android.gms.common.api.ResultTransform
@@ -4132,6 +4049,8 @@ com.google.android.gms.internal.common.zzw
 com.google.android.gms.internal.common.zzx
 com.google.android.gms.internal.common.zzy
 com.google.android.gms.internal.common.zzz
+com.google.android.gms.internal.location.zza:
+    protected final android.os.Parcel zzb(int,android.os.Parcel)
 com.google.android.gms.internal.location.zzaa
 com.google.android.gms.internal.location.zzab
 com.google.android.gms.internal.location.zzac
@@ -4172,6 +4091,7 @@ com.google.android.gms.internal.location.zzaz
 com.google.android.gms.internal.location.zzba
 com.google.android.gms.internal.location.zzbb
 com.google.android.gms.internal.location.zzbd
+com.google.android.gms.internal.location.zzbe
 com.google.android.gms.internal.location.zzbf
 com.google.android.gms.internal.location.zzbg
 com.google.android.gms.internal.location.zzbh
@@ -4179,9 +4099,11 @@ com.google.android.gms.internal.location.zzbi
 com.google.android.gms.internal.location.zzbj
 com.google.android.gms.internal.location.zzbl
 com.google.android.gms.internal.location.zzbp:
+    public void <init>(android.content.Context)
     public final com.google.android.gms.tasks.Task flushLocations()
     public final com.google.android.gms.tasks.Task getCurrentLocation(int,com.google.android.gms.tasks.CancellationToken)
     public final com.google.android.gms.tasks.Task getCurrentLocation(com.google.android.gms.location.CurrentLocationRequest,com.google.android.gms.tasks.CancellationToken)
+    public final com.google.android.gms.tasks.Task getLastLocation()
     public final com.google.android.gms.tasks.Task getLastLocation(com.google.android.gms.location.LastLocationRequest)
     public final com.google.android.gms.tasks.Task getLocationAvailability()
     public final com.google.android.gms.tasks.Task removeLocationUpdates(android.app.PendingIntent)
@@ -4214,12 +4136,15 @@ com.google.android.gms.internal.location.zzca
 com.google.android.gms.internal.location.zzcb
 com.google.android.gms.internal.location.zzcc:
     public final com.google.android.gms.common.api.PendingResult checkLocationSettings(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.location.LocationSettingsRequest)
+com.google.android.gms.internal.location.zzce:
+    public void <init>(android.content.Context)
 com.google.android.gms.internal.location.zzcf
 com.google.android.gms.internal.location.zzcg
 com.google.android.gms.internal.location.zzch
 com.google.android.gms.internal.location.zzci
 com.google.android.gms.internal.location.zzcj
 com.google.android.gms.internal.location.zzck
+com.google.android.gms.internal.location.zzcm
 com.google.android.gms.internal.location.zzco
 com.google.android.gms.internal.location.zzcr
 com.google.android.gms.internal.location.zzcx
@@ -4234,6 +4159,7 @@ com.google.android.gms.internal.location.zzda:
     public final void zzq(com.google.android.gms.location.GeofencingRequest,android.app.PendingIntent,com.google.android.gms.tasks.TaskCompletionSource)
     public final void zzr(com.google.android.gms.tasks.TaskCompletionSource)
     public final void zzs(com.google.android.gms.location.CurrentLocationRequest,com.google.android.gms.tasks.CancellationToken,com.google.android.gms.tasks.TaskCompletionSource)
+    public final void zzt(com.google.android.gms.location.LastLocationRequest,com.google.android.gms.tasks.TaskCompletionSource)
     public final void zzv(com.google.android.gms.internal.location.zzcs,com.google.android.gms.location.LocationRequest,com.google.android.gms.tasks.TaskCompletionSource)
     public final void zzw(android.app.PendingIntent,com.google.android.gms.location.LocationRequest,com.google.android.gms.tasks.TaskCompletionSource)
     public final void zzx(android.app.PendingIntent,com.google.android.gms.tasks.TaskCompletionSource)
@@ -4253,10 +4179,12 @@ com.google.android.gms.internal.location.zzi:
 com.google.android.gms.internal.location.zzl
 com.google.android.gms.internal.location.zzm
 com.google.android.gms.internal.location.zzn:
+    public final android.location.Location zzd()
     public final com.google.android.gms.common.internal.ICancelToken zze(com.google.android.gms.location.CurrentLocationRequest,com.google.android.gms.internal.location.zzq)
     public final com.google.android.gms.location.LocationAvailability zzf(java.lang.String)
     public final void zzg(com.google.android.gms.location.GeofencingRequest,android.app.PendingIntent,com.google.android.gms.internal.location.zzm)
     public final void zzi(com.google.android.gms.internal.location.zzk)
+    public final void zzj(com.google.android.gms.location.LastLocationRequest,com.google.android.gms.internal.location.zzq)
     public final void zzl(android.app.PendingIntent,com.google.android.gms.common.api.internal.IStatusCallback)
     public final void zzm(android.app.PendingIntent)
     public final void zzn(android.app.PendingIntent,com.google.android.gms.internal.location.zzm,java.lang.String)
@@ -4271,10 +4199,12 @@ com.google.android.gms.internal.location.zzn:
     public final void zzw(boolean)
     public final void zzx(boolean,com.google.android.gms.common.api.internal.IStatusCallback)
 com.google.android.gms.internal.location.zzo:
+    public abstract android.location.Location zzd()
     public abstract com.google.android.gms.common.internal.ICancelToken zze(com.google.android.gms.location.CurrentLocationRequest,com.google.android.gms.internal.location.zzq)
     public abstract com.google.android.gms.location.LocationAvailability zzf(java.lang.String)
     public abstract void zzg(com.google.android.gms.location.GeofencingRequest,android.app.PendingIntent,com.google.android.gms.internal.location.zzm)
     public abstract void zzi(com.google.android.gms.internal.location.zzk)
+    public abstract void zzj(com.google.android.gms.location.LastLocationRequest,com.google.android.gms.internal.location.zzq)
     public abstract void zzl(android.app.PendingIntent,com.google.android.gms.common.api.internal.IStatusCallback)
     public abstract void zzm(android.app.PendingIntent)
     public abstract void zzn(android.app.PendingIntent,com.google.android.gms.internal.location.zzm,java.lang.String)
@@ -4288,6 +4218,8 @@ com.google.android.gms.internal.location.zzo:
     public abstract void zzv(android.location.Location,com.google.android.gms.common.api.internal.IStatusCallback)
     public abstract void zzw(boolean)
     public abstract void zzx(boolean,com.google.android.gms.common.api.internal.IStatusCallback)
+com.google.android.gms.internal.location.zzp
+com.google.android.gms.internal.location.zzq
 com.google.android.gms.internal.location.zzt
 com.google.android.gms.internal.location.zzu
 com.google.android.gms.internal.location.zzv
@@ -4468,6 +4400,7 @@ com.google.android.gms.location.FusedLocationProviderClient:
     public abstract com.google.android.gms.tasks.Task flushLocations()
     public abstract com.google.android.gms.tasks.Task getCurrentLocation(int,com.google.android.gms.tasks.CancellationToken)
     public abstract com.google.android.gms.tasks.Task getCurrentLocation(com.google.android.gms.location.CurrentLocationRequest,com.google.android.gms.tasks.CancellationToken)
+    public abstract com.google.android.gms.tasks.Task getLastLocation()
     public abstract com.google.android.gms.tasks.Task getLastLocation(com.google.android.gms.location.LastLocationRequest)
     public abstract com.google.android.gms.tasks.Task getLocationAvailability()
     public abstract com.google.android.gms.tasks.Task removeLocationUpdates(android.app.PendingIntent)
@@ -4494,14 +4427,8 @@ com.google.android.gms.location.GeofencingRequest$Builder
 com.google.android.gms.location.GeofencingRequest$InitialTrigger
 com.google.android.gms.location.GeofencingRequest
 com.google.android.gms.location.Granularity
-com.google.android.gms.location.LastLocationRequest$Builder:
-    public void <init>(com.google.android.gms.location.LastLocationRequest)
-    public com.google.android.gms.location.LastLocationRequest$Builder setGranularity(int)
-    public com.google.android.gms.location.LastLocationRequest$Builder setMaxUpdateAgeMillis(long)
-com.google.android.gms.location.LastLocationRequest:
-    public final com.google.android.gms.internal.location.zzd zza()
-    public final java.lang.String zzb()
-    public final boolean zzc()
+com.google.android.gms.location.LastLocationRequest$Builder
+com.google.android.gms.location.LastLocationRequest
 com.google.android.gms.location.LocationAvailability:
     public static com.google.android.gms.location.LocationAvailability extractLocationAvailability(android.content.Intent)
     public static boolean hasLocationAvailability(android.content.Intent)
@@ -4510,9 +4437,14 @@ com.google.android.gms.location.LocationRequest$Builder:
     public static final long IMPLICIT_MAX_UPDATE_AGE
     public static final long IMPLICIT_MIN_UPDATE_INTERVAL
     public void <init>(int,long)
+    public void <init>(long)
     public com.google.android.gms.location.LocationRequest$Builder setDurationMillis(long)
+    public com.google.android.gms.location.LocationRequest$Builder setIntervalMillis(long)
     public com.google.android.gms.location.LocationRequest$Builder setMaxUpdateDelayMillis(long)
     public com.google.android.gms.location.LocationRequest$Builder setMaxUpdates(int)
+    public com.google.android.gms.location.LocationRequest$Builder setMinUpdateDistanceMeters(float)
+    public com.google.android.gms.location.LocationRequest$Builder setMinUpdateIntervalMillis(long)
+    public com.google.android.gms.location.LocationRequest$Builder setPriority(int)
 com.google.android.gms.location.LocationRequest:
     public static final int PRIORITY_BALANCED_POWER_ACCURACY
     public static final int PRIORITY_HIGH_ACCURACY
@@ -4536,12 +4468,16 @@ com.google.android.gms.location.LocationResult:
     public static boolean hasResult(android.content.Intent)
 com.google.android.gms.location.LocationServices:
     private void <init>()
+    public static com.google.android.gms.location.FusedLocationProviderClient getFusedLocationProviderClient(android.content.Context)
     public static com.google.android.gms.location.GeofencingClient getGeofencingClient(android.app.Activity)
     public static com.google.android.gms.location.GeofencingClient getGeofencingClient(android.content.Context)
+    public static com.google.android.gms.location.SettingsClient getSettingsClient(android.content.Context)
 com.google.android.gms.location.LocationSettingsRequest$Builder:
     public com.google.android.gms.location.LocationSettingsRequest$Builder addAllLocationRequests(java.util.Collection)
     public com.google.android.gms.location.LocationSettingsRequest$Builder setAlwaysShow(boolean)
     public com.google.android.gms.location.LocationSettingsRequest$Builder setNeedBle(boolean)
+com.google.android.gms.location.LocationSettingsResponse:
+    public com.google.android.gms.location.LocationSettingsStates getLocationSettingsStates()
 com.google.android.gms.location.LocationSettingsStates:
     public static com.google.android.gms.location.LocationSettingsStates fromIntent(android.content.Intent)
     public boolean isLocationPresent()
@@ -4585,6 +4521,7 @@ com.google.android.gms.location.zzt:
 com.google.android.gms.location.zzu:
     public abstract void zzd(android.location.Location)
     public abstract void zze()
+com.google.android.gms.location.zzv
 com.google.android.gms.maps.CameraUpdateFactory:
     private void <init>()
     public static com.google.android.gms.maps.CameraUpdate newLatLngBounds(com.google.android.gms.maps.model.LatLngBounds,int,int,int)
@@ -5075,7 +5012,9 @@ com.google.android.gms.tasks.Task:
     public com.google.android.gms.tasks.Task addOnCanceledListener(com.google.android.gms.tasks.OnCanceledListener)
     public com.google.android.gms.tasks.Task addOnCanceledListener(java.util.concurrent.Executor,com.google.android.gms.tasks.OnCanceledListener)
     public com.google.android.gms.tasks.Task addOnCompleteListener(android.app.Activity,com.google.android.gms.tasks.OnCompleteListener)
+    public abstract com.google.android.gms.tasks.Task addOnFailureListener(com.google.android.gms.tasks.OnFailureListener)
     public abstract com.google.android.gms.tasks.Task addOnFailureListener(java.util.concurrent.Executor,com.google.android.gms.tasks.OnFailureListener)
+    public abstract com.google.android.gms.tasks.Task addOnSuccessListener(com.google.android.gms.tasks.OnSuccessListener)
     public abstract com.google.android.gms.tasks.Task addOnSuccessListener(java.util.concurrent.Executor,com.google.android.gms.tasks.OnSuccessListener)
     public com.google.android.gms.tasks.Task continueWith(com.google.android.gms.tasks.Continuation)
     public com.google.android.gms.tasks.Task continueWithTask(com.google.android.gms.tasks.Continuation)
@@ -5109,6 +5048,10 @@ com.google.android.gms.tasks.zzw:
     public final com.google.android.gms.tasks.Task addOnCanceledListener(com.google.android.gms.tasks.OnCanceledListener)
     public final com.google.android.gms.tasks.Task addOnCanceledListener(java.util.concurrent.Executor,com.google.android.gms.tasks.OnCanceledListener)
     public final com.google.android.gms.tasks.Task addOnCompleteListener(android.app.Activity,com.google.android.gms.tasks.OnCompleteListener)
+    public final com.google.android.gms.tasks.Task addOnFailureListener(com.google.android.gms.tasks.OnFailureListener)
+    public final com.google.android.gms.tasks.Task addOnFailureListener(java.util.concurrent.Executor,com.google.android.gms.tasks.OnFailureListener)
+    public final com.google.android.gms.tasks.Task addOnSuccessListener(com.google.android.gms.tasks.OnSuccessListener)
+    public final com.google.android.gms.tasks.Task addOnSuccessListener(java.util.concurrent.Executor,com.google.android.gms.tasks.OnSuccessListener)
     public final com.google.android.gms.tasks.Task continueWith(com.google.android.gms.tasks.Continuation)
     public final com.google.android.gms.tasks.Task continueWithTask(com.google.android.gms.tasks.Continuation)
     public final com.google.android.gms.tasks.Task continueWithTask(java.util.concurrent.Executor,com.google.android.gms.tasks.Continuation)
@@ -5632,21 +5575,7 @@ io.flutter.plugin.common.MethodChannel:
     private static final java.lang.String TAG
     public void resizeChannelBuffer(int)
 io.flutter.plugin.common.PluginRegistry$PluginRegistrantCallback
-io.flutter.plugin.common.PluginRegistry$Registrar:
-    public abstract android.content.Context activeContext()
-    public abstract android.app.Activity activity()
-    public abstract io.flutter.plugin.common.PluginRegistry$Registrar addNewIntentListener(io.flutter.plugin.common.PluginRegistry$NewIntentListener)
-    public abstract io.flutter.plugin.common.PluginRegistry$Registrar addUserLeaveHintListener(io.flutter.plugin.common.PluginRegistry$UserLeaveHintListener)
-    public abstract io.flutter.plugin.common.PluginRegistry$Registrar addViewDestroyListener(io.flutter.plugin.common.PluginRegistry$ViewDestroyListener)
-    public abstract io.flutter.plugin.common.PluginRegistry$Registrar addWindowFocusChangedListener(io.flutter.plugin.common.PluginRegistry$WindowFocusChangedListener)
-    public abstract android.content.Context context()
-    public abstract java.lang.String lookupKeyForAsset(java.lang.String)
-    public abstract java.lang.String lookupKeyForAsset(java.lang.String,java.lang.String)
-    public abstract io.flutter.plugin.common.BinaryMessenger messenger()
-    public abstract io.flutter.plugin.platform.PlatformViewRegistry platformViewRegistry()
-    public abstract io.flutter.plugin.common.PluginRegistry$Registrar publish(java.lang.Object)
-    public abstract io.flutter.view.TextureRegistry textures()
-    public abstract io.flutter.view.FlutterView view()
+io.flutter.plugin.common.PluginRegistry$Registrar
 io.flutter.plugin.common.PluginRegistry$ViewDestroyListener
 io.flutter.plugin.common.PluginRegistry$WindowFocusChangedListener
 io.flutter.plugin.common.PluginRegistry
@@ -12268,10 +12197,6 @@ androidx.core.app.SharedElementCallback:
     public abstract void onSharedElementEnd(java.util.List,java.util.List,java.util.List)
     public abstract void onSharedElementStart(java.util.List,java.util.List,java.util.List)
 androidx.core.content.LocusIdCompat
-androidx.core.location.LocationListenerCompat$-CC:
-    public static void $default$onProviderDisabled(androidx.core.location.LocationListenerCompat,java.lang.String)
-    public static void $default$onProviderEnabled(androidx.core.location.LocationListenerCompat,java.lang.String)
-    public static void $default$onStatusChanged(androidx.core.location.LocationListenerCompat,java.lang.String,int,android.os.Bundle)
 androidx.core.view.LayoutInflaterCompat:
     private static boolean sCheckedField
     private static java.lang.reflect.Field sLayoutInflaterFactory2Field
@@ -12320,8 +12245,6 @@ androidx.loader.content.Loader:
     public final void startLoading()
     public void stopLoading()
     public void unregisterListener(androidx.loader.content.Loader$OnLoadCompleteListener)
-com.baseflow.geolocator.location.LocationClient:
-    public abstract boolean checkLocationService(android.content.Context)
 com.google.android.gms.common.GooglePlayServicesUtilLight:
     static boolean zza
     private static boolean zzb

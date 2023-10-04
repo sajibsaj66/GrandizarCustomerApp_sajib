@@ -72,11 +72,6 @@
             android:value="AIzaSyD9k1Ts1u3Z9v85olXLBe92XRv-BaxhcCM" />
 
         <service
-            android:name="com.baseflow.geolocator.GeolocatorLocationService"
-            android:enabled="true"
-            android:exported="false"
-            android:foregroundServiceType="location" />
-        <service
             android:name="com.lyokone.location.FlutterLocationService"
             android:enabled="true"
             android:exported="false"
