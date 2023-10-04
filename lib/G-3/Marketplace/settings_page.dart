@@ -1,11 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:grandizar_customer_app_sajib/G-3/Marketplace/language_page.dart';
+import 'package:grandizar_customer_app_sajib/G-3/Marketplace/password_modification_page.dart';
 
 import '../Location and Language/index.dart';
 
-class SettingsPage extends StatelessWidget {
+class SettingsPage extends StatefulWidget {
   const SettingsPage({super.key});
 
+  @override
+  State<SettingsPage> createState() => _SettingsPageState();
+}
+
+class _SettingsPageState extends State<SettingsPage> {
+  String initLan = 'English';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,26 +35,81 @@ class SettingsPage extends StatelessWidget {
             ),
           ),
           title: CustomText(
-              title: 'Settings', fontSize: 18.spMax, fontWeight: FontWeight.bold)),
-      body: Column(
-        children: [
-          Container(
-            width: 327,
-            height: 101,
-            margin: const EdgeInsets.all(10),
-            decoration: BoxDecoration(
-              color: AppColors.awashColor,
-              borderRadius: BorderRadius.circular(16)
+              title: 'Settings',
+              fontSize: 18.spMax,
+              fontWeight: FontWeight.bold)),
+      body: Center(
+        child: Column(
+          children: [
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => PasswordModificationPage()));
+              },
+              child: Container(
+                width: 340.w,
+                height: 101.h,
+                padding: const EdgeInsets.all(8),
+                margin: const EdgeInsets.all(8),
+                decoration: BoxDecoration(
+                    color: AppColors.awashColor,
+                    borderRadius: BorderRadius.circular(16)),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    CircleAvatar(
+                      radius: 24.r,
+                      backgroundColor: AppColors.whiteColor,
+                      child: Image.asset(AppImages.lock, scale: 3),
+                    ),
+                    CustomText(title: 'Change Password', fontSize: 18.sp),
+                    Image.asset(AppImages.edit, scale: 0.9)
+                  ],
+                ),
+              ),
             ),
-            child: const Row(
-              children: [
-                CircleAvatar(
-
-                )
-              ],
-            ),
-          )
-        ],
+            InkWell(
+              onTap: () async {
+                final result = await Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => LanguagePage()));
+                setState(() {
+                  initLan = result;
+                });
+              },
+              child: Container(
+                width: 340.w,
+                height: 101.h,
+                padding: const EdgeInsets.all(8),
+                margin: const EdgeInsets.all(8),
+                decoration: BoxDecoration(
+                    color: AppColors.awashColor,
+                    borderRadius: BorderRadius.circular(16)),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    CircleAvatar(
+                      radius: 24.r,
+                      backgroundColor: AppColors.whiteColor,
+                      child: Image.asset(AppImages.language, scale: 3),
+                    ),
+                    Column(
+                      children: [
+                        CustomText(title: 'Language', fontSize: 18.sp),
+                        CustomText(
+                            title: initLan,
+                            fontSize: 14.sp,
+                            txtColor: AppColors.disableColor),
+                      ],
+                    ),
+                    Image.asset(AppImages.edit, scale: 0.9)
+                  ],
+                ),
+              ),
+            )
+          ],
+        ),
       ),
     );
   }

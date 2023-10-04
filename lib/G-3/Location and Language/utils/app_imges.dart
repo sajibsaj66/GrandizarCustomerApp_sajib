@@ -22,4 +22,5 @@ class AppImages{
   static const String subway = 'image/assets/G-3/task_image/subway.png';
   static const String lock = 'image/assets/G-3/task_image/lock.png';
   static const String language = 'image/assets/G-3/task_image/language.png';
+  static const String edit = 'image/assets/G-3/task_image/edit.png';
 }

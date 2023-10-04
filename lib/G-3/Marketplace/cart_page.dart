@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:grandizar_customer_app_sajib/G-3/Marketplace/settings_page.dart';
 
 import '../Location and Language/index.dart';
 
@@ -43,7 +44,12 @@ class CartPage extends StatelessWidget {
                 fontSize: 14.sp,
                 txtColor: AppColors.disableColor),
             SizedBox(height: 20.h),
-            CustomButtonMedium(title: 'Browse', onPressed: () {})
+            CustomButtonMedium(
+                title: 'Browse',
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => SettingsPage()));
+                })
           ],
         ),
       ),
