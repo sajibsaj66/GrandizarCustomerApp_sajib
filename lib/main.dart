@@ -7,6 +7,7 @@ import 'package:grandizar_customer_app_sajib/G-3/Marketplace/language_page.dart'
 import 'package:grandizar_customer_app_sajib/G-3/Marketplace/password_modification_page.dart';
 import 'package:grandizar_customer_app_sajib/G-3/Marketplace/rating_page.dart';
 import 'package:grandizar_customer_app_sajib/G-3/Marketplace/settings_page.dart';
+import 'package:grandizar_customer_app_sajib/G-3/Reset%20Password/screens/index.dart';
 
 import 'G-3/Marketplace/order_page.dart';
 
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(
             fontFamily: GoogleFonts.sen().fontFamily,
           ),
-          home: const SettingsPage(),
+          home: const SignupScreen(),
         );
       },
     );

@@ -1,4 +1,1 @@
-2023/10/03-17:46:01.775 1f40 Log #3: 0 ops saved to Table #4 OK
-2023/10/03-17:46:01.787 1f40 Archiving C:\Users\ssk12\AppData\Local\Temp\flutter_tools.a9938922\flutter_tools_chrome_device.25f5e57c\Default\Extension Rules/000003.log: OK
-2023/10/03-17:46:01.788 1f40 Archiving C:\Users\ssk12\AppData\Local\Temp\flutter_tools.a9938922\flutter_tools_chrome_device.25f5e57c\Default\Extension Rules/MANIFEST-000001: OK
-2023/10/03-17:46:01.797 1f40 **** Repaired leveldb C:\Users\ssk12\AppData\Local\Temp\flutter_tools.a9938922\flutter_tools_chrome_device.25f5e57c\Default\Extension Rules; recovered 0 files; 0 bytes. Some data may have been lost. ****
+2023/10/03-17:46:01.801 1f40 Reusing MANIFEST C:\Users\ssk12\AppData\Local\Temp\flutter_tools.a9938922\flutter_tools_chrome_device.25f5e57c\Default\Extension Rules/MANIFEST-000001

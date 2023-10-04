@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:grandizar_customer_app_sajib/G-3/Marketplace/order_page.dart';
 
 import 'model/static_models.dart';
 import 'utils/app_imges.dart';
 import 'utils/colors.dart';
 import 'widgets/buttons.dart';
 import 'widgets/texts.dart';
-
 
 class HubsPage extends StatefulWidget {
   const HubsPage({super.key});
@@ -34,9 +34,12 @@ class _HubsPageState extends State<HubsPage> {
           child: CircleAvatar(
             backgroundColor: AppColors.awashColor.withOpacity(0.9),
             radius: 22.r,
-            child: IconButton(onPressed: () {
-              Navigator.pop(context);
-            }, icon: const Icon(Icons.arrow_back_ios_new, color: AppColors.redColor)),
+            child: IconButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                icon: const Icon(Icons.arrow_back_ios_new,
+                    color: AppColors.redColor)),
           ),
         ),
         title: CustomText(title: 'List of Hubs', fontSize: 22.spMax),
@@ -94,7 +97,8 @@ class _HubsPageState extends State<HubsPage> {
                                     locations[selectedIndex].latitude,
                                     locations[selectedIndex]
                                         .longitude), // Set marker coordinates
-                                infoWindow: const InfoWindow(title: 'Your Location'),
+                                infoWindow:
+                                    const InfoWindow(title: 'Your Location'),
                               ),
                             },
                             onMapCreated: (GoogleMapController controller) {
@@ -153,7 +157,10 @@ class _HubsPageState extends State<HubsPage> {
                 onPressed: selectedIndex == -1
                     ? () {}
                     : () {
-                        print(locations[selectedIndex].locationName);
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => OrderPage()));
                       },
                 buttonColor: selectedIndex == -1
                     ? AppColors.awashColor.withOpacity(0.5)
