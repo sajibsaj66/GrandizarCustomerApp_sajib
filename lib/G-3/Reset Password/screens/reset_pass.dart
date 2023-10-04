@@ -13,8 +13,8 @@ class ResetPwdWithEmailPhone extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView(padding: EdgeInsets.all(16), children: [
-        AppHeading(title: AppStaticData.resetPassword),
+      body: ListView(padding: const EdgeInsets.all(16), children: [
+        const AppHeading(title: AppStaticData.resetPassword),
         SizedBox(height: 20.h),
         Column(
           children: [
